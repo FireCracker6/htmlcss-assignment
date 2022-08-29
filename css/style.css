@@ -280,14 +280,26 @@ body {
         align-items: center;
     }
 
+    .showcase .showcase-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 3rem 1rem;
+    }
+
     .showcase .showcase-content h1 {
         font-family: var(--font-play);
-        font-size: 3rem;
+        font-size: 3.4rem;
         text-align: center;
+        margin-bottom: 3rem;
+        
     }
     .showcase .showcase-content h1 strong {
        font-weight: var(--font-weight-bold);
       color: var(--color-theme);
+    }
+    .showcase .showcase-content p {
+      display:none;
     }
     .showcase img {
        display: none;
@@ -320,14 +332,17 @@ body {
 
 
 
-@media(min-width: 768px) {
+@media(min-width: 578px) {
     .top-menu .menu-links {
         display: block;
     }
     .top-menu > .container {
         justify-content: space-between;
-        align-items: center;
+       
     }
+}
+@media(min-width: 768px) {
+    
 }
 
 
