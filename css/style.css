@@ -64,7 +64,7 @@ body {
     height: 40px;
 }
 
-    .top-menu>.container {
+    .top-menu > .container {
     height: 100%;
     display: flex;
     justify-content: end;
@@ -89,6 +89,7 @@ body {
     .top-menu .site-settings .dropdown-theme {
         background-color: var(--color-theme);
         color: var(--color-white);
+       
 
     }
 
@@ -97,6 +98,7 @@ body {
         color: var(--color-white);
         border: none;
         padding: 0;
+        
     }
 
     .top-menu .site-settings .dropdown-theme .dropdown-menu {
@@ -104,6 +106,7 @@ body {
         color: var(--color-white);
         border: none;
         width: 250px;
+       
 
     }
 
@@ -123,6 +126,14 @@ body {
     .top-menu .site-settings .dropdown-theme .dropdown-menu .dropdown-item:hover {
         background-color: var(--color-theme-dark);
         color: var(--color-white);
+
+    }
+    .top-menu -menu-links {
+        display: none;
+
+    }
+    .top-menu .menu-links .links {
+        display: none;
 
     }
 
@@ -259,6 +270,28 @@ body {
         align-items: center;
 
     }
+/* showcase */
+.showcase {
+    background-color: var(--color-gray-3);
+}
+    .showcase .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .showcase .showcase-content h1 {
+        font-family: var(--font-play);
+        font-size: 3rem;
+        text-align: center;
+    }
+    .showcase .showcase-content h1 strong {
+       font-weight: var(--font-weight-bold);
+      color: var(--color-theme);
+    }
+    .showcase img {
+       display: none;
+    }
 
 
 
@@ -287,18 +320,20 @@ body {
 
 
 
-@media(min-width: 578px) {
+@media(min-width: 768px) {
     .top-menu .menu-links {
         display: block;
     }
+    .top-menu > .container {
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
-.top-menu>.container {
-    justify-content: space-between;
-}
+
 
 @media(min-width: 992px) {
-    .top-menu>.container {
+    .top-menu > .container {
         justify-content: space-between;
         align-items: center;
     }
