@@ -77,8 +77,8 @@ body {
 .bg-theme {
     background-color: var(--color-theme);
 }
-.bg-theme-dark {
-    background-color: var(--color-theme-dark);
+.cart-theme {
+   background-color: blue;
 }
 .text-theme {
    color: var(--color-theme);
@@ -119,7 +119,7 @@ body {
 .top-menu > .container {
     height: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: start;
     align-items: center;
 
 
@@ -138,6 +138,7 @@ body {
 
     .top-menu .site-settings {
         display: flex;
+        width: 100%;
     }
     .top-menu .site-settings .mobile__logo  {
       
@@ -145,50 +146,37 @@ body {
         justify-content: start;
       
     }
-    .top-menu .mcart-container {
-        display: flex;
-      justify-content: end;
-        text-align: end;
-        width: 100%;
-      
-    }
-    .top-menu .mobile-user  {
-        display: none;
+    .top-menu  .mobile-user .menu-link {
+       
+     justify-content: end;
        
     }
-
-    .top-menu .mobile-user .menu-link  {
-        color: var(--color-white);
-        text-decoration: none;
-        margin: 0;
-        justify-content: end;
-        width: 100%;
-       padding-right: 0.1rem;
-       margin-right: 0.5rem;
-       
-        font-size: 1rem;
-       
-
-    }
-    top-menu .mobile-user .menu-link badge {
-        color: #080C24;
-    }
-
-    .top-menu .mobile-user .menu-link:hover {
-        color: var(--color-theme-dark);
-    }
-    .top-menu  .mobile-user  #m-c-cart {
+    .top-menu .mobile-user #cart-mob {
         position: relative;
      }
-     .top-menu .mobile-user #m-c-cart .badge {
-         background-color: var(--color-theme-dark);
+     .top-menu .mobile-user #cart-mob .badge {
+         background-color: var(--color-theme);
          position: absolute;
-         top: -0-5rem;
+         top: -0.5rem;
          left: 1rem;
       }
-      .main-menu .menu-links #mcart:hover .badge {
+      .top-menu .mobile-users #cart-mob:hover .badge {
          background-color: var(--color-theme-dark);
       }
+    .top-menu .site-settings .mobile-user {
+        display: none;
+    }
+    .top-menu .mobile-user a {
+        color: var(--color-white);
+        text-decoration: none;
+        margin: 0.2rem;
+       
+    }
+
+    .top-menu .mobile-user a:hover {
+        color: var(--color-theme-dark);
+    }
+
 
     .top-menu .site-settings .dropdown-theme {
         background-color: var(--color-theme);
@@ -369,7 +357,6 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: var(--color-theme);
     }
 
     .main-menu nav .browse-categories {
@@ -725,15 +712,6 @@ body {
 
 
 @media(min-width: 300px) {
-
-    .top-menu > .container {
-        height: 100%;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-    
-    
-        }
     .top-menu .menu-links {
         display: none;
     }
@@ -741,31 +719,23 @@ body {
         display: none;
     }
    
+   
   
     .top-menu .site-settings .mobile__logo  {
         display: inline-block;
-        background-color: var(--color-theme-white);
-      
        
      
     }
-    .top-menu .mobile-user {
-        display: inline-block;
-    }
-    .top-menu .site-settings .logo-container {
-        display: flex;
-       
-        justify-items: center;
-        background-color: var(--color-theme-white);
-      
-    }
     .top-menu .site-settings .mobile__logo img {
       
-        width: 100%;
-        height: 100%;
+        width: 70%;
+        height: 70%;
         background-color: white;
-        
     }
+    .top-menu .site-settings .mobile-user {
+        display: flex;
+    }
+
     .main-menu>.container {
        
         padding-top: 2.2rem;
@@ -902,7 +872,6 @@ body {
        
      
     }
-
     .top-menu > .container {
         justify-content: space-between;
        
