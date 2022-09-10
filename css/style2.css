@@ -33,6 +33,11 @@
 }
 
 /* general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html,
 body {
     font-size: 16px;
@@ -351,66 +356,6 @@ body {
     .showcase img {
         display: none;
     }
-
-    .discount {
-        background-color: var(--color-gray-3);
-    
-    }
-
-    .discount .container {
-        position: relative;
-        margin-top: 100px;
-        text-align: center;
-        height: 418px;
-     
-    }
-    .discount .discount-box {
-        position: absolute;
-        border: 1px solid black;
-        display: block;
-        align-items: center;
-        background-color: var(--color-theme);
-        width: 255px;
-        height: 100%;
-      
- 
-  
-    }
-  
-    .discount .discount-body h1 {
-     
-        font-size: 3.5rem;
-        font-family: var(--font-play);
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-  
-       margin-top: 50px;
-       margin-bottom: 0px;
-    }
-    .discount .discount-body p {
-      
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
-    .discount .discount-body h1 strong {
-        font-weight: var(--font-weight-bold);
-         color: var(--color-white);
-         margin: 0;
-         
-     
-     }
-     .discount .discount-body h1 strong small{
-        font-weight: var(--font-weight-bold);
-         color: var(--color-white);
-         margin: 0;
-         font-size: 2rem;
-     
-     }
-     .discount .discount-body p {
-        margin: 0;
-        color: var(--color-white);
-       }
- 
     /* webshop-info */
     .webshop-info {
         padding: 4rem 0;
@@ -628,24 +573,40 @@ body {
                 }
 
 
-.featured-products {
-                    padding-top: 2rem; 
+
+
+
+@media(min-width: 578px) {
+    .top-menu .menu-links {
+        display: block;
+    }
+    .top-menu > .container {
+        justify-content: space-between;
+       
+    }
+
+  
+}
+@media(min-width: 768px) {
+    
+    .showcase .showcase-body h1 {
+        font-size: var(--font-size-60);
+       
+    }
+    .showcase .showcase-body h1 strong {
+       display: block;
+     
+     }
+
+
 }
 
 
 
-
-
-
 @media(min-width: 992px) {
- 
-    .top-menu -menu-links {
-        display: block;
 
-    }
-    .top-menu .menu-links .links {
-        display: block;
-
+    .top.menu .menu-links .links {
+        display: inline;
     }
    
     .showcase .container {
@@ -661,15 +622,10 @@ body {
         display: block;
         width: 50%;
     }
-    .top-menu > .container {
-        justify-content: start;
-
-  
   
 
 }
- }
-/* @media only screen and (max-width: 992px) {
+@media(min-width: 1200px) {
 
     .showcase .showcase-body  {
         flex: 1;
@@ -682,93 +638,5 @@ body {
        flex: 1;
         width: 100%;
     }
-    .top-menu > .container {
-        justify-content: start;
   
-    }
- } */
-
-
-
-@media only screen and (max-width: 820px) {
-
-    .top-menu > .container {
-        justify-content: space-between;
-       
-    }
-
-    .showcase .container .showcase-body {
-        width: 100%;
-    }
-
-    
-    .showcase .showcase-body h1 {
-        font-size: var(--font-size-60);
-       
-    }
-    .showcase .showcase-body h1 strong {
-       display: block;
-     
-     }
-     .webshop-info .container {
-      
-    }
-    .shop-by-category .grid {
-        display: grid;
-        gap: 0.8rem;
-        grid-template-columns: repeat(5, minmax(1fr, 1fr));
-        grid-template-rows: repeat(3, minmax(1fr 1fr)) ;
-    }
-    .main-menu .menu-links {
-        flex: 1;
-        display: flex;
-        justify-content: end;
-        align-items: center;
-    }
-    .main-menu .menu-links .menu-link:nth-of-type(2) {
-        display: none;
-    }
-    .main-menu .menu-links .menu-link:nth-of-type(3) {
-        display: none;
-    }
-    .main-menu .container .brand img {
-        width: 80%;
-        height: 80%;
-    }
-   
-    .main-menu nav .browse-categories button  {
-        width: 100%;
-        height: 100%;
-
-    }
-
-    .main-menu nav .browse-categories button i {
-       padding: 0;
-       margin: 0;
-    }
-    
-
-
-}
-@media only screen and (max-width: 500px)  {
-
-    .top-menu > .container {
-        justify-content: end;
-       
-    }
-
-
-    .webshop-info .container {
-        display: block;
-    }
-
-    .shop-by-category .grid {
-        display: grid;
-        gap: 0.8rem;
-        grid-template-columns: repeat(5, minmax(50px, 200px));
-        grid-template-rows: repeat(3, minmax(50px, 200px)) ;
-    }
-
-    
-
 }
