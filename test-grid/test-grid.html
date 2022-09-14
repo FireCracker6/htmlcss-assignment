@@ -119,11 +119,16 @@
     <div class="main-menu">
       <div class="container">
         <div class="brand">
-          <a href="index.html"> <img src="../images/logotype.svg" alt="Kenkata Webshop"></a>
+          <a href="test-grid.html"> <img src="../images/logotype.svg" alt="Kenkata Webshop"></a>
         </div>
-        <div class="search"></div>
+        <div class="search">
+          <form id="searchboxform">
+            <input id="query" type="text" placeholder="search products...">
+            <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
+          </form>
+        </div>
         <div class="menu-links">
-          <a class="menu-link" href="#"><i class="fa-light fa-user me-2"></i> My&nbsp;account</a>
+          <a class="menu-link" href="account.html"><i class="fa-light fa-user me-2"></i> My&nbsp;account</a>
           <a class="menu-link" href="#"><i class="fa-light fa-heart"></i> </a>
           <a class="menu-link" href="#"><i class="fa-light fa-shuffle"></i> </a>
           <a id="cart" class="menu-link" href="#">
@@ -165,7 +170,7 @@
       <div class="showcase-body">
           <h1>Shopping is <strong>MORE FUN</strong></h1>
           <p>Vivamus dignissim a ex eu ornare. Ut fermentum orci vel diam ultricies faucibus. Quisque quis erat sed</p>
-          <a href="#" class="btn btn-lg btn-white">SHOP NOW</a>
+          <a href="#" class="btn btn-lg btn-white">SHOP&nbsp;NOW</a>
       </div>
       <img src="../images/showcase-image.svg" alt="two people standing">  
     </div>
@@ -446,8 +451,9 @@
     
     </div>
 </section>
-<section class="container">
- 
+
+<section class="DISC">
+ <div class="container">
   <div class="DISC__container">
   <div class="DISC__item ">
     <div class="discount-box">
@@ -466,7 +472,8 @@
     </div>
   </div>
 </div>
-</div>
+
+ </div>
 </section>
 
 <!-- Featured Products -->
@@ -490,9 +497,9 @@
             <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
             <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
           </ul>
-          <img src="../images/placeholders/placeholder-male-body.png"  alt="placeholder image">
+          <img src="../images/featured-products/featured-1-girl.png"  alt="placeholder image">
           <div class="card-body">
-              <h1>Blue silk flare sleeved top</h1>
+              <h1>Winter collection for women's</h1>
              <button disabled>Fashion</button>
              <p class="card-old-price">€50.00</p>
              <div class="d-flex justify-content-between align-items-center w-100">
@@ -520,9 +527,9 @@
             <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
             <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
           </ul>
-          <img src="../images/placeholders/placeholder-male-chest.png"  alt="placeholder image">
+          <img src="../images/featured-products/featured-2-male.png"  alt="placeholder image">
           <div class="card-body">
-              <h1>Blue silk flare sleeved top</h1>
+              <h1>New look men's coat</h1>
              <button disabled>Fashion</button>
              <p class="card-old-price">€50.00</p>
              <div class="d-flex justify-content-between align-items-center w-100">
@@ -551,9 +558,9 @@
             <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
             <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
           </ul>
-          <img src="../images/placeholders/placeholder-female-body.png"  alt="placeholder image">
+          <img src="../images/featured-products/featured-3-jacket.png"  alt="placeholder image">
           <div class="card-body">
-              <h1>Circle pattern girls shirt</h1>
+              <h1>Red women's blazer full</h1>
              <button disabled>Fashion</button>
              <p class="card-old-price">€35.00</p>
              <div class="d-flex justify-content-between align-items-center w-100">
@@ -585,8 +592,9 @@
   </section>
 
   <!-- Flash Sales banner -->
-  <section class="container">
+  <section class="FLASH-SALES">
     
+    <div class="container">
     
   <div class="DISC__container">
     <div class="FLASH__item ">
@@ -608,12 +616,14 @@
         </div>
         <div class="count-down-ticker">
           <div class="count-down-text"><h2>12</h2><p>Seconds</p></div>
+          
         </div>
       </div>
-    <div class="btn-shop-now"> <a href="#" class="btn btn-lg btn-white">SHOP NOW</a></div> 
+      <div class="btn-shop-now"> <a href="#" class="btn btn-lg btn-white">SHOP NOW</a></div>
     </div>
+    
     </div>
-
+  </div>
   </section>
 <!-- Top sellers -->
 <section class="new-arrivals">
@@ -625,14 +635,14 @@
     </div>
   </div>
   
-<div class="container mt-5">  
-<div class="BEST__grid border">
-  <div class="feagrid-item item-1 ">
+<div class="container mb-4">  
+<div class="BEST__grid">
+
 
 
     
 
-          <div class="col">
+          <div class="item-1">
             <div class="card h-100">
               <ul class="card-menu">
                 <li><i class="fa-solid fa-circle instock"></i></li>
@@ -641,9 +651,9 @@
                 <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
                 <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
               </ul>
-              <img src="../images/placeholders/placeholder-male-body.png"  alt="placeholder image">
+          <img class=".top-sellers-1-img" src="../images/top-sellers/big-top-selller1.png"  alt="placeholder image">
               <div class="card-body featured-body">
-                  <h1>Blue silk flare sleeved top</h1>
+                  <h1>Men's denim shirts full</h1>
                  <button disabled>Fashion</button>
                  <p class="card-old-price">€50.00</p>
                  <div class="d-flex justify-content-between align-items-center w-100">
@@ -663,10 +673,10 @@
      
   
 
-  </div>
+ 
   <div class="grid-item item-2">
 
-      <div class="col">
+      <div class="item-2">
           <div class="card h-100">
             <ul class="card-menu">
               <li><i class="fa-solid fa-circle instock"></i></li>
@@ -675,9 +685,9 @@
               <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
               <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
             </ul>
-            <img src="../images/placeholders/placeholder-male-body.png"  alt="placeholder image">
+            <img src="../images/top-sellers/top-seller-top2.png"  alt="placeholder image">
             <div class="card-body">
-                <h1>Blue silk flare sleeved top</h1>
+                <h1>Women's leather bag and shoe</h1>
                <button disabled>Fashion</button>
                <p class="card-old-price">€50.00</p>
                <div class="d-flex justify-content-between align-items-center w-100">
@@ -697,9 +707,9 @@
    
 
   </div>
-  <div class="grid-item item-3">
+  <div class="item-3">
 
-         <div class="col">
+         <div class="item-3">
             <div class="card h-100">
               <ul class="card-menu">
                 <li><i class="fa-solid fa-circle instock"></i></li>
@@ -708,9 +718,9 @@
                 <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
                 <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
               </ul>
-              <img src="../images/placeholders/placeholder-male-body.png"  alt="placeholder image">
+              <img src="../images/top-sellers/sneakers-top-seller.png"  alt="placeholder image">
               <div class="card-body">
-                  <h1>Blue silk flare sleeved top</h1>
+                  <h1>New look men's sneakers</h1>
                  <button disabled>Fashion</button>
                  <p class="card-old-price">€50.00</p>
                  <div class="d-flex justify-content-between align-items-center w-100">
@@ -737,36 +747,43 @@
 
 
 <!-- Subsribe banner -->
-<div class="container">
+<section class="SUBSCRIBE">
+  <div class="container">
 <div class="DISC__container">
 
   <div class="SUBSCRIBE__item-1">
 
     <div class="sub-text ">
-       <h1>SUBSCRIBE <strong>NOW</strong></h1> 
+     <div class="section-title"> 
+      <h1>SUBSCRIBE <span>NOW</span></h1>
+     </div>
        <p>Signup for awesome news about our new products and
          know our special discounts on products.</p>
      
-   </div>
-  
-   <form>
-     
-     <input type="email" id="email" name="email" value="Enter email adress">
-     <div> <a href="#" class="btn btn-lg btn-white">SUBSCRIBE</a></div>
-   </form>
-  
+   
+   <div class="subscribe d-flex">
+    <form id="subscribeform">
+      <input id="subscribe type="text" placeholder="Enter your email address">
+      <button type="submit" class="btn btn-lg btn-lg-white">SUBSCRIBE</button>
+    </form>
+  </div>
+</div>
  </div>
  <div class="SUBCRIBE__item-2"></div>
 </div>
 </div>
+</section>
 
-<div class="container">
+<footer>
 
-<div class="F__Copy"><p>&copy; Copyright 2022 Kenkata</p></div>
+  <div class="container">
 
-</div>
-
+    <div class="F__Copy"><p>&copy; Copyright 2022 Kenkata</p></div>
+    
+    </div>
 
 </body>
+
+</footer>
 
 </html>
