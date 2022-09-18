@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.FLASH__container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(118, 98, 104);
+    width: 100%;
+    height: 418px;
+
+  
+}
+
+    .flexboxparent {
+        display: flex;
+        border: 1px solid black;
+        height: 100%;
+        background-color: rgb(228, 218, 237);
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+        .item-1 {
+            display:flex;
+            width: 50%;
+            height: 40%;
+            align-items: center;
+            justify-content: center;
+
+            border: 1px solid black;
+
+            
+                }
+                .flash-sale {
+                
+                    width: 230px;
+                    height: 100%;
+                    border: 1px solid rgb(88, 47, 64);
+                    justify-content: center;
+                    text-align: center;
+                align-items: center; 
+                align-self: stretch; 
+                    padding-top: 3rem;
+                    background-color: rgb(241, 241, 192);
+                
+                }
+
+        .item-2 {
+            display: flex;
+            align-items:center;
+            justify-content:center;
+        
+            width: 50%;
+            height: 200px;
+            padding: 0rem;
+            border: 1px solid rgb(182, 39, 23);
+
+        }
+
+        .ticker {
+        
+            display: flex;
+            position: relative;
+            width: 320px;
+            justify-content: space-between;
+            border: 1px solid sandybrown;
+            height: 140px;
+            align-self: stretch;
+            margin-top: 2rem;
+            
+        }
+                .counter {
+                    width: 75px;
+                    height: 75px;
+                    border: 5px solid rgb(112, 62, 143);
+                    border-radius: 50%;
+                    border-style: dotted;
+                    border-block-color: rgb(237, 140, 232);
+                    text-align: center;
+                    padding-top: 1rem;
+                
+                    background-color: antiquewhite;
+                }
+                    .counter p {
+                        font-size: xx-small;
+                    }
+            
+                .btn-white {
+                        background-color: #fff;
+                        color: #000;;
+                        border-radius: 30px;
+                        font-weight: bold;
+                        padding-left: 1.75rem;
+                        padding-right: 1.75rem;
+                        font-size: 0.8rem;
+                        border: none;
+                    
+                    }
+                        .btn-white:hover {
+                            background-color: rgb(235, 242, 219);
+                            color: rgb(230, 122, 197);;
+                            border-radius: 30px;
+                            font-weight: bold;
+                            padding-left: 1.75rem;
+                            padding-right: 1.75rem;
+                            font-size: 0.8rem;
+                            border: none;
+                        
+                        }
+                    .item-2 .btn-shop-now {
+                        position: absolute;
+                        display: block;
+                        align-self: center;
+                        padding-top: 4.3rem;
+                        overflow: visible;      
+                    }
+                  
+
+@media(min-width: 845px) {
+           
+    .flexboxparent {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .item-1 {
+        justify-content: flex-start;
+        height: 60%;
+    }
+    .item-2 {
+        justify-content: end;
+    }
+    .item-2 .btn-shop-now {
+      margin-right: 160px;
+      margin-top: 140px;
+    }
+    .ticker {
+        width: 450px;
+        height: 170px;
+    }
+    .counter {
+        width: 108px;
+        height: 108px;
+        padding-top: 1.5rem;
+    }
+    .item-2 .btn-shop-now {
+        display: block;
+        align-self: center;
+        padding-top: 0rem;
+        overflow: hidden;
+    }
+   
+       
+    
+      
+} 
