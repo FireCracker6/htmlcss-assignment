@@ -1,0 +1,28 @@
+{
+    "server": {
+        "host": "nt22.unoeuro.com",
+        "port": 21,
+        "user": "saxeit.se",
+        "password": "FgwEnc2etz5m"
+    },
+    "files": [
+        {
+            "localfile": "C:\Users\Svart\OneDrive\WEBBUTVECKLARENET\HTMLCSS\WEBSHOP\MOBILE-FIRST-WEBSHOP",
+            "remotefile": "/public_html/WEBSHOP/MOBILE-FIRST-WEBSHOP"
+        },
+        {
+            "localfile": "/home/sean/Project/upload/test/Test.js",
+            "remotefile": "/apps/test/test.js"
+        }
+    ],
+    "dirs":[
+        {
+            "localdir":"/run/mount/svcs/wifimg/program",
+            "remotedir":"/apps/tests/program"
+        },
+        {
+            "localdir":"/run/mount/svcs/tmsync",
+            "remotedir":"/apps/tests2"
+        }
+    ]
+}

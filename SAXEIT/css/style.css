@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+   
+    background-image: linear-gradient(-90deg, #636c6f, #061236);
+    color:rgb(208, 227, 227)
+}
+
+.item-1 {
+    grid-area: header;
+}
+
+.item-2 {
+    grid-area: menu;
+}
+
+.item-3 {
+    grid-area: main;
+}
+
+.item-4 {
+    grid-area: right;
+}
+
+.item-5 {
+    grid-area: footer;
+}
+
+.Content-wrapper {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'main main main main main main'
+        'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #828a8f;
+    background-image: linear-gradient(-90deg, #8ecedc, #061236);
+}
+
+.Content-wrapper>div {
+
+    text-align: center;
+    padding: 0px 0px 20px 0;
+  /*   background-color: #161616f6; */
+    font-size: 30px;
+}
+
+.TOP-banner {
+    height: 10px;
+    background-color: #76ae98ea;
+    background-image: url(/SAXEIT/images/BlueNature.jpg);
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    background-position-x: right;
+    background-position-y: 45%;
+
+
+}
+
+.SX-navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20%;
+
+    /*  border: 1px solid red; */
+    font-size: medium;
+    background-color:#78aaba;
+    background-image: linear-gradient(#bfd8e0, #447382);
+    font-family: 'Muli', sans-serif;
+    font-weight: medium;
+    color: #d0e3e3;
+  
+
+}
+
+.SX-navbar .SX-logo {
+
+    text-align: left;
+    width: 25%;
+    height: 100%;
+    align-self: center;
+    background-color: #193641;
+}
+
+.SX-navbar .SX-logo img {
+    width:200px;
+    height: 80px;
+}
+
+.SX-navbar .md-navbar {
+    flex: 6;
+    align-self: flex-end;
+    height: 50%;
+    /* border: 1px solid red; */
+    background-color: #7999ac;
+    border-top: 1px solid #555151;
+    border-bottom: 1px solid  #555151;;
+
+}
+
+.SX-navbar .right-nav {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    width: 25%;
+    background-color: #7999ac;
+    border-top: 1px solid #555151;
+    border-bottom: 1px solid  #555151;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: .9rem;
+
+
+}
+
+.SX-banner {
+    /*    background-image: url(/SAXEIT/images/BlueNature.jpg);  */
+      
+    height: 120px;
+    background-repeat: repeat-x;
+    background-blend-mode: color-burn;
+    background-position-x: right;
+    background-position-y: 45%;
+    background-color: #082f3d;
+
+}
+
+.SX-banner .SX-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+/*     border: 1px solid wheat; */
+padding: 0 0.6rem 0 2rem;
+}
+.SX-banner .SX-container .left-summary {
+
+  align-items: flex-end;
+    text-align: end;
+    width: 100%;
+    height: 20%;
+
+/*     border: 1px solid white; */
+    
+}
+.SX-banner .SX-container .left-summary img {
+    object-fit: cover;
+    width: 420px;
+    height: 120px;
+    filter: grayscale(80%);
+    filter: opacity(35%);
+
+}
+
+.SX-banner .SX-container h1 {
+    align-self: flex-end;
+    font-size: 3rem;
+    color: rgb(182, 215, 188)
+}
+
+.Content-wrapper .content-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Content-wrapper .content-container .SX-summary {
+    width: 70%;
+    padding: 30px;
+    padding-bottom: 50px;
+    text-align: left;
+    font-size: medium;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif
+}
+.content-details {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    font-family: 'Quicksand', sans-serif;
+   
+    padding: 0 1rem 0 4rem;
+}
+.content-details .details-left {
+    width: 50%;
+/*     border: 1px solid green; */
+    text-align: left;
+    font-size: 1rem;
+}
+.content-details .details-right {
+    width: 100%;
+  /*   border: 1px solid green; */
+    text-align: left;
+    font-size: 1rem;
+}

@@ -304,7 +304,7 @@ footer {
         
             }
             .APPAREL__sections .card ul.card-menu {
-                height: fit-content;
+               height: fit-content;
             }
            
                 .APPAREL__sections .card .card-menu li  {
@@ -312,6 +312,15 @@ footer {
                 margin-bottom: 0.1rem;
                 font-size: 1.1em;
                 }
+
+                /* rezising the shopping bag icon a bit since it seems a bit bigger than the others */
+                 .APPAREL__sections .card .card-menu li i.fa-regular.fa-cart-shopping {
+                    font-size: 1.21rem;
+                 }
+
+
+
+
                         .APPAREL__sections .card:hover .card-menu {
                             top: 20px;
                         }
@@ -322,106 +331,250 @@ footer {
                             color: var(--color-theme);
                         }
                   
-               /* beta tooltip code inspired and manipulated from (Christopher Heng) thesitewizard.com */
-               a#tooltipcart {
-                position: relative ;
-              }
-              a#tooltipcart:hover::after {
-                background-image: url(/images/tooltip-new-arrivals.svg);
-               background-repeat:no-repeat;
-                content: "Add to cart" ;
-               
-                position: absolute ;
-                display: inline-block;
-                top:0em ;
-                left: -8em ;
-                min-width: 95px ;
-                min-height: 30px;
-                font-size: 0.8rem;
-                text-align: center;
-                color: #fff;
-                
-                padding-bottom: 4px ;
-                padding-top: 4px ;
-             
-             
-                z-index: 1 ;
-              }
+                   
+                /* tooltip version for Apparel__sections version 1.0 */
+
+                a.arrowlink-cart {
+                    position: relative;
+                }
+                a.arrowlink-cart:hover::before {
+                    content: "Add to cart";
+                     background-color: #b72929;
+                    position: absolute ;
+                    display: inline-block;
+                    align-content: center;
+                    top:-0.4em ;
+                    border: none;
+                    border-radius: 0.5em;
+                    left: -8.5em ;
+                    min-width: 96px ;
+                    min-height:30px;
+                    font-size: 0.8rem;
+                    text-align: center;
+                    color: #fff;
+                    padding-top: 0.4em;
+                    z-index: 1 ;
+                }
+                a.arrowlink-cart:hover::after {
+                    content: "";
+                    position: absolute;
+                    display:flex;
+                    top: -0.1rem;
+                    left: -1em;
+                    width: 0;
+                    height: 0;
+                    border-top: 12px solid transparent;
+                    border-left: 14px solid #b72929;;
+                    border-bottom: 12px solid transparent;
+                 z-index: 1;
+                 
+                }
+                a.arrowlink-quickview {
+                    position: relative;
+                }
+                a.arrowlink-quickview:hover::before {
+                    content: "Quick view";
+                     background-color: #b72929;
+                    position: absolute ;
+                    display: inline-block;
+                    align-content: center;
+                    top:-0.4em ;
+                    border: none;
+                    border-radius: 0.5em;
+                    left: -8.5em ;
+                    min-width: 96px ;
+                    min-height:30px;
+                    font-size: 0.8rem;
+                    text-align: center;
+                    color: #fff;
+                    padding-top: 0.4em;
+                    z-index: 1 ;
+                }
+                a.arrowlink-quickview:hover::after {
+                    content: "";
+                    position: absolute;
+                    display:flex;
+                    top: -0.1rem;
+                    left: -1em;
+                    width: 0;
+                    height: 0;
+                    border-top: 12px solid transparent;
+                    border-left: 14px solid #b72929;;
+                    border-bottom: 12px solid transparent;
+                 z-index: 1;
+                 
+                }
+                a.arrowlink-shuffle {
+                    position: relative;
+                }
+                a.arrowlink-shuffle:hover::before {
+                    content: "Shufffle";
+                     background-color: #b72929;
+                    position: absolute ;
+                    display: inline-block;
+                    align-content: center;
+                    top:-0.4em ;
+                    border: none;
+                    border-radius: 0.5em;
+                    left: -8.5em ;
+                    min-width: 96px ;
+                    min-height:30px;
+                    font-size: 0.8rem;
+                    text-align: center;
+                    color: #fff;
+                    padding-top: 0.4em;
+                    z-index: 1 ;
+                }
+                a.arrowlink-shuffle:hover::after {
+                    content: "";
+                    position: absolute;
+                    display:flex;
+                    top: -0.1rem;
+                    left: -1em;
+                    width: 0;
+                    height: 0;
+                    border-top: 12px solid transparent;
+                    border-left: 14px solid #b72929;;
+                    border-bottom: 12px solid transparent;
+                 z-index: 1;
+                 
+                }
+                a.arrowlink-favorite {
+                    position: relative;
+                }
+                a.arrowlink-favorite:hover::before {
+                    content: "Add favorite";
+                     background-color: #b72929;
+                    position: absolute ;
+                    display: inline-block;
+                    align-content: center;
+                    top:-0.4em ;
+                    border: none;
+                    border-radius: 0.5em;
+                    left: -8.5em ;
+                    min-width: 96px ;
+                    min-height:30px;
+                    font-size: 0.8rem;
+                    text-align: center;
+                    color: #fff;
+                    padding-top: 0.4em;
+                    z-index: 1 ;
+                }
+                a.arrowlink-favorite:hover::after {
+                    content: "";
+                    position: absolute;
+                    display:flex;
+                    top: -0.1rem;
+                    left: -1em;
+                    width: 0;
+                    height: 0;
+                    border-top: 12px solid transparent;
+                    border-left: 14px solid #b72929;;
+                    border-bottom: 12px solid transparent;
+                 z-index: 1;
+                 
+                }
+                a#tooltipcart {
+                    position: relative ;
+                    }
+                    a#tooltipcart:hover::after {
+                    background-image: url(/images/tooltip-new-arrivals.svg);
+                    background-repeat:no-repeat;
+                    content: "Add to cart" ;
+                    
+                    position: absolute ;
+                    display: inline-block;
+                    top:0em ;
+                    left: -8em ;
+                    min-width: 95px ;
+                    min-height: 30px;
+                    font-size: 0.8rem;
+                    text-align: center;
+                    color: #fff;
+                    
+                    padding-bottom: 4px ;
+                    padding-top: 4px ;
+                    
+                    
+                    z-index: 1 ;
+                    }
+                 
+
               a#tooltipsearch {
                 position: relative ;
               }
-              a#tooltipsearch:hover::after {
-                background-image: url(/images/tooltip-new-arrivals.svg);
-               background-repeat:no-repeat;
-                content: "Search" ;
-               
-                position: absolute ;
-                display: inline-block;
-                top:0em ;
-                left: -8em ;
-                min-width: 95px ;
-                min-height: 30px;
-                font-size: 0.8rem;
-                text-align: center;
-                color: #fff;
+                a#tooltipsearch:hover::after {
+                    background-image: url(/images/tooltip-new-arrivals.svg);
+                background-repeat:no-repeat;
+                    content: "Search" ;
                 
-                padding-bottom: 4px ;
-                padding-top: 4px ;
-             
-             
-                z-index: 1 ;
-              }
+                    position: absolute ;
+                    display: inline-block;
+                    top:0em ;
+                    left: -8em ;
+                    min-width: 95px ;
+                    min-height: 30px;
+                    font-size: 0.8rem;
+                    text-align: center;
+                    color: #fff;
+                    
+                    padding-bottom: 4px ;
+                    padding-top: 4px ;
+                
+                
+                    z-index: 1 ;
+                }
         
               a#tooltipfav {
                 position: relative ;
               }
-              a#tooltipfav:hover::after {
-                background-image: url(/images/tooltip-new-arrivals.svg);
-               background-repeat:no-repeat;
-                content: "Add favorite" ;
-               
-                position: absolute ;
-                display: inline-block;
-                align-items: center;
-                top:0em ;
-                left: -8em ;
-                min-width: 95px ;
-                min-height: 30px;
-                font-size: 0.8rem;
-                text-align: center;
-                color: #fff;
+                a#tooltipfav:hover::after {
+                    background-image: url(/images/tooltip-new-arrivals.svg);
+                background-repeat:no-repeat;
+                    content: "Add favorite" ;
                 
-                padding-bottom: 4px ;
-                padding-top: 4px ;
-             
-             
-                z-index: 1 ;
-              }
+                    position: absolute ;
+                    display: inline-block;
+                    align-items: center;
+                    top:0em ;
+                    left: -8em ;
+                    min-width: 95px ;
+                    min-height: 30px;
+                    font-size: 0.8rem;
+                    text-align: center;
+                    color: #fff;
+                    
+                    padding-bottom: 4px ;
+                    padding-top: 4px ;
+                
+                
+                    z-index: 1 ;
+                }
               a#tooltipshuffle {
                 position: relative ;
-              }
-              a#tooltipshuffle:hover::after {
-                background-image: url(/images/tooltip-new-arrivals.svg);
-               background-repeat:no-repeat;
-                content: "Shuffle" ;
-               
-                position: absolute ;
-                display: inline-block;
-                align-items: center;
-                top:0em ;
-                left: -8em ;
-                min-width: 95px ;
-                min-height: 30px;
-                font-size: 0.8rem;
-                text-align: center;
-                color: #fff;
+                }
+                a#tooltipshuffle:hover::after {
+                    background-image: url(/images/tooltip-new-arrivals.svg);
+                background-repeat:no-repeat;
+                    content: "Shuffle" ;
                 
-                padding-bottom: 4px ;
-                padding-top: 4px ;
-             
-             
-                z-index: 1 ;
-              }
+                    position: absolute ;
+                    display: inline-block;
+                    align-items: center;
+                    top:0em ;
+                    left: -8em ;
+                    min-width: 95px ;
+                    min-height: 30px;
+                    font-size: 0.8rem;
+                    text-align: center;
+                    color: #fff;
+                    
+                    padding-bottom: 4px ;
+                    padding-top: 4px ;
+                
+                
+                    z-index: 1 ;
+                }
               /* FOR MOBILE NEW ARRIVALS AND FEATURED PRODUCTS */
               .MOBILE_ARRIVALS {
                 display: block;
@@ -1386,10 +1539,10 @@ text-align: left;
         display: none;
         grid-template-columns: repeat( 4, 1fr );
         grid-template-rows: repeat(2, 1fr );
-       height: auto;
-       width: auto;
-       column-gap: 1.5rem;
-       row-gap: 1.5rem;
+       height: 100%;
+       width: 100%;
+       column-gap: 1rem;
+       row-gap: 1rem;
  
     }
      
@@ -1598,7 +1751,7 @@ text-align: left;
                 padding-top: 0.8rem;
                }
   
-
+/* Media min-width was tested with iphone and ipad (landscape and regular)  */
 @media (min-width: 420px) {
    
     .APPAREL__sections .card .card-body h1 {
@@ -1832,6 +1985,9 @@ text-align: left;
         .APPAREL__sections.NOMOBILE {
             display: block;
         }
+        .APPAREL__sections.NOMOBILE .container {
+            width: 80%;
+        }
         .APPAREL__sections.MOBILE {
             display: none;
         }
@@ -1850,6 +2006,10 @@ text-align: left;
             align-items: flex-start;
             grid-auto-flow: row;
         }
+        #signin_rememberme {
+            background-color: #34495e;
+          }
+          
       
 
         
@@ -1880,4 +2040,5 @@ text-align: left;
         
         place-items: initial;
 
-}
+        }
+ }
