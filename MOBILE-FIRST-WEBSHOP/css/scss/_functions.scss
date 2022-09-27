@@ -1,0 +1,24 @@
+@function set-theme-color($color) {
+    @if (lightness($color) > 70 ) {
+        @return $color-theme-dark
+    }
+    @else {
+        @return $color-theme
+    }
+}
+@function set-color($color) {
+    @if (lightness($color) > 70 ) {
+        @return $color-dark
+    }
+    @else {
+        @return $color-white
+    }
+}
+@function set-dynamic-color($color, $procent: 50) {
+    @if (lightness($color) > 70 ) {
+        @return darken($color, $procent)
+    }
+    @else {
+        @return lighten($color, $procent)
+    }
+}

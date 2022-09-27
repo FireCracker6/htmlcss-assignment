@@ -1,0 +1,377 @@
+
+          .APPAREL__sections {
+            padding-top: 2rem; 
+            padding-bottom: 4rem;
+
+            .card {
+               
+                position: relative;
+                height: 380px;
+               
+                overflow: hidden;
+
+                img {
+                    height: 100%;
+                    
+                }
+
+                .card-body {
+                    position: absolute;
+                    padding: 1rem;
+                    bottom: 0;
+                    height: 14%;
+                    width: 100%;
+                    color: $color-white;
+                    z-index: 1;
+                    transition: 0.3s ease-in-out;
+                    font-size: 1rem;
+
+                    h1 {
+                        font-size: 1.125rem;
+                        margin-bottom: 1rem;
+                        transition: 0.3s ease-in-out;
+                        font-weight: $font-weight-regular;
+                    }
+
+                    button {
+                        background-color: transparent;
+                        color: $color-white;
+                        border-color: $color-white;
+                        border: 1px solid $color-white;
+                        font-size: 0.875rem;
+                        padding-left: 0.9rem;
+                        padding-right: 0.9rem;
+                        margin: 0.5rem 0;
+                     }
+
+                     .card-old-price {
+                        text-decoration: line-through;
+                        margin: 0;
+                    }
+                    .card-discount-price {
+                        color: $color-theme;
+                        font-weight: $font-weight-medium;
+                        font-size: 1.5em;
+                        margin: 0;
+                    }
+                }
+                .featured-body {
+                    position: absolute;
+                    padding: 1rem;
+                    bottom: 0;
+                    height: 7%;
+                    width: 100%;
+                    color: $color-white;
+                    z-index: 1;
+                    transition: 0.3s ease-in-out;
+                    font-size: 1rem;
+                }
+
+                &:hover .card-body {
+                    height: 40%;
+
+                    h1 {
+                        margin-bottom: 0;
+                    }
+                }
+
+                .card-featured-background {
+                    position: absolute;
+                    bottom: 0;
+                    height: 7.4%;
+                    width: 100%;
+                    background-color: $color-theme-dark;
+                    opacity: 0.90;
+                    transition: height 0.3s ease-in-out;
+                }
+                .card-background {
+                    position: absolute;
+                    bottom: 0;
+                    height: 15%;
+                    width: 100%;
+                    background-color: $color-theme-dark;
+                    opacity: 0.90;
+                    transition: height 0.3s ease-in-out;
+                }
+                &:hover .card-background {
+                    height: 100%;
+                }
+                &:hover .card-featured-background {
+                    height: 100%;
+                }
+
+                .card-menu {
+                    position: absolute;
+                    width: 50px;
+                    z-index: 1;
+                    top: 121%;
+                    right: 1rem;
+                    list-style: none;
+                    /* center aligining the menu tested in edge, opera, safari */
+                    padding: .85rem;
+                    font-size: 1.25rem;
+                    border-radius: $border-radius-medium;
+                    background-color: $color-white;
+                    transition: top 0.3s ease-in-out;
+            
+                }
+
+                .card-menu li  {
+                    margin-top: 0.1rem;
+                    margin-bottom: 0.1rem;
+                    font-size: 1.1em;
+
+                     i.fa-regular.fa-cart-shopping {
+                        font-size: 1.21rem;
+                     }
+                    }
+                    a {
+                        color: $color-gray-20;
+
+                        &:hover {
+                            color: $color-theme;
+                        }
+                    }
+
+                    &:hover .card-menu {
+                        top: 20px;
+                    }
+            
+            }
+
+            .col .card img {
+                object-fit:cover;
+                width: 100%;
+                height:100%;
+            }
+           
+        }
+        
+          
+                /* tooltip version for Apparel__sections version 1.0 */
+
+                a.arrowlink-cart {
+                    position: relative;
+
+                    &:hover::before {
+                        content: "Add to cart";
+                         background-color: $color-theme;;
+                        position: absolute ;
+                        display: inline-block;
+                        align-content: center;
+                        top:-0.4em ;
+                        border: none;
+                        border-radius: 0.5em;
+                        left: -8.5em ;
+                        min-width: 96px ;
+                        min-height:30px;
+                        font-size: 0.8rem;
+                        text-align: center;
+                        color: #fff;
+                        padding-top: 0.4em;
+                        z-index: 1 ;
+                    }
+                    &:hover::after {
+                        content: "";
+                        position: absolute;
+                        top: -0.1rem;
+                        left: -1em;
+                        width: 0;
+                        height: 0;
+                        border-top: 12px solid transparent;
+                        border-left: 14px solid $color-theme;
+                        border-bottom: 12px solid transparent;
+                    z-index: 1;
+                    
+                    }
+                }
+                
+              
+                a.arrowlink-quickview {
+                    position: relative;
+
+                    &:hover::before {
+                        content: "Quick view";
+                         background-color: $color-theme;;
+                        position: absolute ;
+                        display: inline-block;
+                        align-content: center;
+                        top:-0.4em ;
+                        border: none;
+                        border-radius: 0.5em;
+                        left: -8.5em ;
+                        min-width: 96px ;
+                        min-height:30px;
+                        font-size: 0.8rem;
+                        text-align: center;
+                        color: #fff;
+                        padding-top: 0.4em;
+                        z-index: 1 ;
+                    }
+                    &:hover::after {
+                        content: "";
+                        position: absolute;
+                        top: -0.1rem;
+                        left: -1em;
+                        width: 0;
+                        height: 0;
+                        border-top: 12px solid transparent;
+                        border-left: 14px solid $color-theme;;
+                        border-bottom: 12px solid transparent;
+                    z-index: 1;
+                    
+                    }
+                }
+            
+              
+                a.arrowlink-shuffle {
+                    position: relative;
+
+                    &:hover::before {
+                        content: "Shufffle";
+                         background-color: $color-theme;;
+                        position: absolute ;
+                        display: inline-block;
+                        align-content: center;
+                        top:-0.4em ;
+                        border: none;
+                        border-radius: 0.5em;
+                        left: -8.5em ;
+                        min-width: 96px ;
+                        min-height:30px;
+                        font-size: 0.8rem;
+                        text-align: center;
+                        color: #fff;
+                        padding-top: 0.4em;
+                        z-index: 1 ;
+                    }
+                    &:hover::after {
+                        content: "";
+                        position: absolute;
+                        top: -0.1rem;
+                        left: -1em;
+                        width: 0;
+                        height: 0;
+                        border-top: 12px solid transparent;
+                        border-left: 14px solid $color-theme;
+                        border-bottom: 12px solid transparent;
+                    z-index: 1;
+                    
+                    }
+                }
+            
+                a.arrowlink-favorite {
+                    position: relative;
+                    &:hover::before {
+                        content: "Add favorite";
+                         background-color: $color-theme;;
+                        position: absolute ;
+                        display: inline-block;
+                        align-content: center;
+                        top:-0.4em ;
+                        border: none;
+                        border-radius: 0.5em;
+                        left: -8.5em ;
+                        min-width: 96px ;
+                        min-height:30px;
+                        font-size: 0.8rem;
+                        text-align: center;
+                        color: #fff;
+                        padding-top: 0.4em;
+                        z-index: 1 ;
+                    }
+                    &:hover::after {
+                        content: "";
+                        position: absolute;
+                        top: -0.1rem;
+                        left: -1em;
+                        width: 0;
+                        height: 0;
+                        border-top: 12px solid transparent;
+                        border-left: 14px solid $color-theme;
+                        border-bottom: 12px solid transparent;
+                    z-index: 1;
+                    
+                    }
+            
+                }
+              
+              /* FOR MOBILE NEW ARRIVALS AND FEATURED PRODUCTS */
+              .MOBILE_ARRIVALS {
+                display: block;
+              }
+              .NO-MOBILE_ARRIVALS {
+                display: none;
+              }
+
+                
+/* Media min-width was tested with iphone and ipad (landscape and regular)  */
+@media (min-width: 420px) {
+   
+    .APPAREL__sections .card .card-body h1 {
+       
+        margin-top: 0.8rem;
+        margin-bottom: 3rem;
+    
+    }
+   
+}   
+@media (min-width:768px) {
+
+    .MOBILE_ARRIVALS {
+        display: none;
+        }
+        .NO-MOBILE_ARRIVALS {
+        display: block;
+        }
+        
+    .APPAREL__sections.NOMOBILE {
+        display: none;
+    }
+    .APPAREL__sections.MOBILE {
+        display: block;
+    }
+
+     }
+
+     @media (min-width:1000px) {
+        
+        .APPAREL__sections {
+
+            .card .card-body h1 {
+    
+                margin-top: 0rem;
+                margin-bottom: 3rem;
+                
+            }
+            .card .card-body button {
+                    display: none;
+                }
+                .NOMOBILE {
+                    display: block;
+                }
+                .NOMOBILE .container {
+                    width: 80%;
+                }
+                .MOBILE {
+                    display: none;
+                }
+                
+              
+
+        }
+       
+                
+            
+             
+        
+             
+     }
+
+     @media(min-width: 1200px) {
+       
+        .APPAREL__sections .card .card-body button {
+            display: block;
+        }
+        
+    }

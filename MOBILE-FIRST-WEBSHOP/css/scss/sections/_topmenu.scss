@@ -1,0 +1,339 @@
+
+.top-menu  .mobile-container.mobile-menu {
+    display: none;
+}
+
+
+.top-menu {
+    background-color: $color-theme;
+    color: $color-white;
+    height: 40px;
+    margin: 0;
+    width: 100%;
+
+    > .container {
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    
+        }
+
+        .d-container .dropdown{
+            display: none;
+        }
+        .menu-links {
+            display: none;
+
+            .links {
+        
+                display: none;
+            }
+            }
+
+    .site-settings {
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+        .logo-container {
+        
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            background-color: $color-theme;
+
+            .mobile__logo  {
+      
+                display: flex;
+                justify-content:start;
+                background-color: $color-white;      
+                width: 85%;
+                height: 85%; 
+
+                img {
+      
+                    width: 100%;
+                    height: 100%;
+                    background-color: white;
+                
+                }
+            }
+     
+        }
+
+        .mcart-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+          
+        }
+        .mobile-user  {
+      
+            display: flex;
+           
+            align-items: center;
+            text-align: end;
+            width: 100%;
+            height: 100%;
+
+            .menu-link  {
+                display: block; 
+                color: $color-white;
+                 text-decoration: none;
+                 margin: 0;
+                justify-content: center;
+                text-align: end;
+                padding-right: 0.1rem;
+                margin-right: 0.5rem;
+                 font-size: 1rem;
+
+                 badge {
+                    color: #080C24;
+                }
+
+                &:hover {
+                    color: $color-theme-dark;
+                }
+                
+         
+             }
+             #m-c-cart {
+                position: relative;
+
+                .badge {
+                    background-color: $color-theme-dark;
+                    position: absolute;
+                    top: -0.3rem;
+                    left: 0.7rem;
+                 }
+                 &:hover .badge {
+                    background-color: $color-theme-dark;
+                 }
+             }
+           
+        }
+
+        .dropdown-theme {
+
+            button:hover {
+                color: $color-theme-dark;
+            }
+
+            .dropdown-menu .dropdown-item {
+                background-color: $color-theme;
+                color: $color-white;
+                border: none;
+                width: 250px;
+                margin: 0;
+
+                &:hover {
+                    background-color: $color-theme-dark;
+                    color: $color-white;
+            
+                }
+        
+            }
+            
+
+        }
+
+        
+    
+    }
+
+    .d-container {
+        position: relative;
+        display: none;
+      }
+
+      .dropdown-theme {
+        background-color: $color-theme;
+        color: $color-white;
+        align-items: flex-start;
+
+        button {
+            background-color: $color-theme;
+            color: $color-white;
+            border: none;
+            padding: 0;
+            
+        }
+        .dropdown-menu {
+            background-color: $color-theme;
+            color: $color-white;
+            border: none;
+            width: 250px;
+           
+    
+        }
+
+    }
+
+    .mobile-menu {
+        display: flex;
+        button {
+            background-color: $color-theme;
+            color: $color-white;
+            border: none;
+    
+            font-size:1.5rem;
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+          
+            padding: 0;
+            margin-RIGHT: 1rem;
+            transition: 0.15s ease-in-out;
+
+            .dropdown-menu {
+                padding-left:0;
+              }
+
+              &:hover {
+                background-color: $color-theme-dark;
+              }
+             
+          }
+    }
+
+    .menu-links {
+        display: none;
+
+        .links {
+            display: none;
+    
+        }
+        a {
+            color: $color-white;
+            text-decoration: none;
+            margin: 0 1.2rem;
+             &:hover {
+            color: $color-theme-dark;
+        }
+        }
+       
+
+        .social-media {
+            margin-left: 1rem;
+            font-size: $font-size-14;
+
+            a {
+                margin: 0 0.3rem;
+
+                &:last-child {
+                    margin: 0 0 0 0.3rem;
+        
+                }
+            
+    
+            }
+           
+
+
+        }
+
+    }
+
+
+          
+}
+
+ 
+    
+
+
+
+ 
+
+ 
+ 
+      .main-menu .menu-links #mcart:hover .badge {
+         background-color: $color-theme-dark;
+      }
+
+    
+
+ 
+
+ 
+
+   
+
+
+
+
+
+ 
+
+
+
+@media (min-width:1000px) {
+.top-menu {
+
+    .mobile-menu {
+        display: none; 
+       
+    }
+
+    .site-settings {
+        display: none;
+
+        .logo-container {
+            display: none;
+           }
+
+           .mobile-user {
+            display: none;
+           }
+        }
+}
+
+.top-menu {
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .dropdown{
+      
+            display: inline-block;
+        
+        }
+    
+        .d-container {
+            display: flex;
+            justify-content: space-between;
+        }
+       
+        }
+        
+        .menu-links {
+          
+            display: inline-block;
+            .links  {
+                display: inline-block;
+              
+                
+          
+           
+            } 
+            
+    }
+    .social-media {
+        display: inline-block;
+     
+     
+     
+    }   
+  
+    
+    
+        
+  }
+
+
+       
+}
+ 

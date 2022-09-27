@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400COUNT__down;700&display=swap');
+@import url('https://fonts.googleapisolor-gr.com/css2?family=Play:wght@400COUNT__down;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@400;500&display=swap');
 
 /*  Project done by Leah Saxe for EC Utbildning - Webutvecklare.net HT2022 */
@@ -1043,6 +1043,8 @@ text-align: left;
         align-items: center;
 
     }
+
+
 /* showcase */
 .showcase {
     background-color: var(--color-gray-3);
@@ -1073,12 +1075,12 @@ text-align: left;
             display: none;
         }
 
-        /* discount banner */
+/* Discount banner */
 
-    .DISC {
-        background-color: var(--color-gray-1);
-      }
-    
+.DISC {
+    background-color: var(--color-gray-1);
+    }
+
     .DISC__container {
         display: flex;
         /* set direction to row for larger screens */
@@ -1127,137 +1129,138 @@ text-align: left;
               margin-right: 2rem;
             }
 
-           .FLASH__SALES {
-            display: flex;
-            justify-content: center;
-            background-color: var(--color-theme-dark);
+
+/* Flash sales section */
+
+.FLASH__SALES {
+display: flex;
+justify-content: center;
+background-color: var(--color-theme-dark);
+width: 100%;
+
+}
+
+    .flexboxparent {
+        display: flex;
+        /*border: 1px solid black; */
+        height: 100%;
+        /* background-color: rgb(228, 218, 237); */
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+        .item-1 {
+            display:flex;
             width: 100%;
- 
-        
-          
-        }
-        
-            .flexboxparent {
-                display: flex;
-                /*border: 1px solid black; */
-                height: 100%;
-                /* background-color: rgb(228, 218, 237); */
-                width: 100%;
-                flex-direction: column;
-                align-items: center;
-            }
-                .item-1 {
-                    display:flex;
-                    width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+
+            /*    border: 1px solid black; */
+
+            
+                }
+                .flash-sale {
+                
+                    width: 255px;
                     height: 100%;
-                    align-items: center;
+                    color: var(--color-white);
+                /*     border: 1px solid rgb(88, 47, 64); */
                     justify-content: center;
-        
-                 /*    border: 1px solid black; */
-        
-                    
-                        }
-                        .flash-sale {
-                        
-                            width: 255px;
-                            height: 100%;
-                            color: var(--color-white);
-                        /*     border: 1px solid rgb(88, 47, 64); */
-                            justify-content: center;
-                            text-align: center;
-                            align-items: center; 
-                            align-self: stretch; 
-                            padding-top: 3rem;
-                            background-color: var(--color-theme);
-                        
-                        }
-                        .flash-sale h1 strong  {
-                            font-size: 3.8rem;
-                        }
-                        .flash-sale p {
-                            font-size: 1.6rem;
-                            font-weight: var(--font-weight-medium);
-                        
-                        }
-        
-                .item-2 {
-                    display: flex;
-                    align-items:center;
-                    justify-content:center;
+                    text-align: center;
+                    align-items: center; 
+                    align-self: stretch; 
+                    padding-top: 3rem;
+                    background-color: var(--color-theme);
                 
-                    width: 100%;
-                    height: 200px;
-                    padding: 0rem;
-                 /*    border: 1px solid rgb(182, 39, 23); */
-        
                 }
-        
-                .ticker {
+                .flash-sale h1 strong  {
+                    font-size: 3.8rem;
+                }
+                .flash-sale p {
+                    font-size: 1.6rem;
+                    font-weight: var(--font-weight-medium);
                 
-                    display: flex;
-                    width: 340px;
-                    justify-content: space-between;
-                    height: 140px;
-                    align-self: stretch;
-                    margin-top: 1.3rem;
+                }
+
+        .item-2 {
+            display: flex;
+            align-items:center;
+            justify-content:center;
+        
+            width: 100%;
+            height: 200px;
+            padding: 0rem;
+            /*    border: 1px solid rgb(182, 39, 23); */
+
+        }
+
+        .ticker {
+        
+            display: flex;
+            width: 340px;
+            justify-content: space-between;
+            height: 140px;
+            align-self: stretch;
+            margin-top: 1.3rem;
+            
+        }
+                .counter {
+                    width: 75px;
+                    height: 75px;
+                        /* solution #1 dashed border (not working with this solution in safari) background-clip does not look pretty in opera but showing it here as an example */
+                    /* using dotted border to compromise safari*/
+
+                        /*    
+                    border: 3px dotted var(--color-theme);
+                    border-radius: 50%;
+                    background-clip: padding-box;
+                    background-color: var(--color-white);  
+                    */ 
+
+                        /* solution #2 using the adobe xd image as background */
+                    background-image: url(/MOBILE-FIRST-WEBSHOP/images/flash-sale-bg.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+            
+                    
+                    text-align: center;
+                    padding-top: 1.2rem;
+        
+                    
                     
                 }
-                        .counter {
-                            width: 75px;
-                            height: 75px;
-                              /* solution #1 dashed border (not working with this solution in safari) background-clip does not look pretty in opera but showing it here as an example */
-                           /* using dotted border to compromise safari*/
-
-                              /*    
-                            border: 3px dotted var(--color-theme);
-                            border-radius: 50%;
-                            background-clip: padding-box;
-                            background-color: var(--color-white);  
-                            */ 
-
-                             /* solution #2 using the adobe xd image as background */
-                           background-image: url(/MOBILE-FIRST-WEBSHOP/images/flash-sale-bg.svg);
-                           background-repeat: no-repeat;
-                           background-size: cover;
+                .counter h2 {
+                    font-weight: var(--font-weight-bold);
+                    color: var(--color-theme);
+                    margin: -2px;
+                    padding-top: 0px;
+                    font-family: var(--font-play);
+                    font-size: 1.4rem;
+                }
+                    .counter p {
+                        font-weight: var(--font-weight-regular);
+                        font-size: 0.71rem;
+                        font-family: var(--font-roboto);
+                    }
+            
+                .btn-white {
+                        
+                        font-size: 0.8rem;
+                        
                     
-                         
-                            text-align: center;
-                            padding-top: 1.2rem;
-             
-                            
-                            
-                        }
-                        .counter h2 {
-                            font-weight: var(--font-weight-bold);
-                            color: var(--color-theme);
-                            margin: -2px;
-                            padding-top: 0px;
-                            font-family: var(--font-play);
-                            font-size: 1.4rem;
-                        }
-                            .counter p {
-                                font-weight: var(--font-weight-regular);
-                                font-size: 0.71rem;
-                                font-family: var(--font-roboto);
-                            }
+                    }
+                        
+                    .item-2 .btn-shop-now {
+                        position: absolute;
+                        display: block;
+                        align-self: center;
+                        padding-top: 6rem;
+                        overflow: visible; 
+                        
+                    }
                     
-                        .btn-white {
-                              
-                                font-size: 0.8rem;
-                               
-                            
-                            }
-                                
-                            .item-2 .btn-shop-now {
-                                position: absolute;
-                                display: block;
-                                align-self: center;
-                                padding-top: 6rem;
-                                overflow: visible; 
-                               
-                            }
-                          
-         
+    
 /* Redid this to a grid layout for better responsiveness  */
 .NEW__webshop__info {
     padding-top: 4rem;
@@ -1838,6 +1841,9 @@ padding-top: 0.8rem;
         .TOPSELLER-MOBILE__grid {
             display: none;
         }
+           .TOPSELLER__grid {
+            display: grid;
+        }
         .APPAREL__sections.NOMOBILE {
             display: block;
         }
@@ -1848,9 +1854,7 @@ padding-top: 0.8rem;
             display: none;
         }
         
-        .TOPSELLER__grid {
-            display: grid;
-        }
+     
         .SUBSCRIBE .container .SUBSCRIBE__container {
             flex-direction: row;
         }

@@ -1,0 +1,49 @@
+
+
+$font-roboto: 'Roboto', sans-serif;
+$font-play: 'Play', sans-serif;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-size-14: 1.17rem;
+$font-size-16: 1.33rem;
+$font-size-18: 1.50rem;
+$font-size-24: 2rem;
+$font-size-36: 3rem;
+$font-size-60: 5rem;
+
+// General borders 
+$border-radius-small: 8px;
+$border-radius-medium: 25px;
+$border-radious-rounded: 50px;
+
+// Colors
+$color-theme: #20D3C2;
+$color-theme-light: #EDFCFA;
+$color-theme-dark: #0E153D;
+$color-theme-dark-light: #50546E;
+$color-dark: #080C24;
+$color-white: #FFFFFF;
+$color-gray-10: #777777;
+$color-gray-20: #AAAAAA;
+$color-gray-30: #CCCCCC;
+$color-gray-40: #E3E3E3;
+$color-gray-50: #EEEEEE;
+$color-gray-60: #F6F6F6;
+
+$color-product-instock: #82D8C6;
+$color-product-outofstock: #FE6C6C;
+
+// BREAKPOINTS
+$breakpoint-md: 768px;
+$breakpoint-md-max-width: 720px;
+$breakpoint-lg: 992px;
+$breakpoint-lg-max-width: 960px;
+$breakpoint-xl:1200px;
+$breakpoint-xl-max-width: 1140px;
+$breakpoint-xxl: 1400px;
+$breakpoint-xxl-max-width: 1320px;
+$breakpoint-ultra-xxl: 1920px;
+$breakpoint-ulta-xxl-max-width: 1600px;
+@import "../breakpoints";

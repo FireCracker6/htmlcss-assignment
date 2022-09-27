@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: $font-roboto;
+    font-weight: $font-weight-regular;
+    color: $color-theme-dark;
+
+}
+
+a {
+    color: $color-theme;
+    font-weight: $font-weight-regular;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-theme-dark;
+        text-decoration: underline;
+        }
+}

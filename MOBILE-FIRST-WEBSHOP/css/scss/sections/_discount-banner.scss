@@ -1,0 +1,75 @@
+
+
+.DISC {
+    background-color: $color-gray-30;
+    }
+
+    .DISC__container {
+        display: flex;
+        /* set direction to row for larger screens */
+        flex-direction: column; 
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .DISC__item {
+        width: 100%;
+        /* set height to 418px on larger screens */
+        height: 318px;
+        align-items: center;
+        background-color: $color-gray-30;
+        display: flex;
+        /* set content to space-between for larger screens */
+        justify-content: center;
+
+        .discount-box {
+            background-color: $color-theme;
+        
+            width:255px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        
+            color: $color-white;
+        
+        
+        
+        }
+        .learn-box {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+            /* set text align to left for larger screens */
+            text-align:center;
+
+            p {
+                font-size: 1.1rem;
+              margin-right: 2rem;
+            }
+        }
+       
+    }
+           
+@media (min-width: 1000px) {
+    .DISC__container {
+    
+        flex-direction: row; 
+        justify-content: space-between;
+        width: 100%;
+    }
+            .DISC__item {
+                width: 100%;
+                /* set height to 418px on larger screens */
+                height: 418px;
+                align-items: center;
+                background-color: $color-gray-30;
+                display: flex;
+                /* set content to space-between for larger screens */
+                justify-content: space-between;
+               
+            }
+}

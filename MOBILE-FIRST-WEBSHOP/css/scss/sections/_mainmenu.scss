@@ -1,0 +1,292 @@
+
+.main-menu {
+    background-color: $color-white;
+    color: $color-theme-dark;
+
+    > .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2.2rem;
+        padding-bottom: 2.2rem;
+    
+    }
+    .brand {
+        flex: 2;
+        display: none;
+    }
+    .search {
+        flex: 4;
+
+        #searchboxform {
+            border-radius: $border-radius-medium;
+            height: 45px;
+            margin: auto;
+            position: relative;
+
+            input {
+                position: absolute;
+                border-radius: $border-radius-medium;
+                height: 100%;
+                width: 100%;
+                outline: none;
+                border: 1px solid $color-gray-40;
+                font-size: 0.9rem;
+                padding-left: 1.3rem;
+            }
+            button {
+                position: absolute;
+                top: 0;
+                right: -2px;
+                height: 100%;
+                width: 50px;
+                background-color: $color-theme;
+                color: $color-white;
+                border: none;
+                border-radius: 0 $border-radius-medium $border-radius-medium 0;
+
+                &:hover {
+                    background-color: $color-theme-dark;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
+          
+      }
+      .menu-links .menu-link {
+
+
+        &:nth-of-type(1) {
+            display: block;
+            font-size: 0.7rem;
+          text-align: center;
+           
+           margin: 0 0.2rem 0 0;
+           display: none;
+    
+        }
+        &:nth-of-type(2) {
+            display: none;
+    
+        }
+        &:nth-of-type(3) {
+            display: none;
+    
+        }
+        &:nth-of-type(4) {
+            font-size: 0.7rem;
+            text-align: center;
+            display: none;
+    
+        }  
+      }
+      .search {
+        flex-basis: 100%;
+        margin: 0;
+
+        #searchboxform {
+            border-radius: $border-radius-medium;
+            height: 45px;
+            margin: auto;
+            position: relative;
+        }
+          
+      }
+      nav {
+
+        .browse-categories {
+            flex-basis: 100%;
+              margin-right: 0;
+              padding-right: 0;
+             
+        }
+        .dropdown .button {
+            display: flex;
+           width: 100%;
+           height: 100%;
+           font-size: 1rem;
+           padding: 0.5rem 0.5rem ;
+           margin-right: 0;
+          
+        
+         
+       } 
+
+      }
+      .menu-links {
+        flex: 3;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        .menu-link {
+            text-decoration: none;
+            color: $color-theme-dark;
+            margin: 0 0.5rem;
+
+            &:hover {
+                text-decoration: none;
+                color: $color-theme;
+            }
+            &:first-child {
+                margin: 0 2rem 0 0;
+            }
+            &:last-child {
+                margin: 0 0 0 0.8rem;
+            }
+            i {
+                font-size: 1.33em;
+            }
+        
+        }
+        #cart {
+            position: relative;
+         }
+         #cart .badge {
+            background-color: $color-theme;
+            position: absolute;
+            top: -1.2rem;
+            left: 0.7rem;
+         }
+    
+    }
+}
+
+
+
+
+  
+  
+
+  
+
+  
+
+   
+    .main-menu .menu-links 
+     .main-menu .menu-links #cart:hover .badge {
+        background-color: $color-theme-dark;
+     }
+ 
+
+
+    .main-menu nav {
+        border-top: 1px solid $color-gray-30;
+        border-bottom: 1px solid $color-gray-30;
+        
+    }.main-menu nav > .container 
+
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $color-theme;
+    }
+
+    .main-menu nav .browse-categories {
+        flex: 2;
+    }
+
+    .main-menu nav .browse-categories button {
+        background-color: $color-theme;
+        color: $color-white;
+        border: none;
+
+        font-size: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.7rem 1rem;  
+        transition: 0.15s ease-in-out;
+      }
+
+    .main-menu nav .browse-categories button:hover {
+        background-color: $color-theme-dark;
+        color: $color-white;
+    }
+
+    .main-menu nav .browse-categories button > span {
+        display: flex;
+        align-items: center;
+    }
+
+    .main-menu nav .browse-categories button > span > i {
+        font-size: 1.4em;
+    }
+
+    .main-menu nav .special-offer {
+        flex: 7;
+        display: none;
+        justify-content: end;
+        align-items: center;
+
+    }
+
+@media (min-width: 1000px) {
+
+  
+    .main-menu {
+        .brand {
+            flex: 2;
+            display: flex;
+        }
+        nav {
+            .browse-categories  {
+                flex-basis: 10%;
+                  margin-right: 0;
+                  padding-right: 0;
+                 
+            }
+            .special-offer  {
+                display: flex;
+                font-size: 1rem;
+                }
+                .container {
+                    background-color: $color-white;
+                  }
+        }
+       
+          
+
+            
+        
+        .search {
+          
+            flex: 4;
+            margin: 0;
+              
+          }
+          .menu-links .menu-link {
+
+            &:nth-of-type(1) {
+                display: block;
+                font-size: 0.7rem;
+              text-align: center;
+               
+               margin: 0 0.2rem 0 0;
+              
+        
+            }
+            &:nth-of-type(2) {
+                display: block;
+        
+            }
+            &:nth-of-type(3) {
+                display: block;
+        
+            }
+            &:nth-of-type(4) {
+                font-size: 0.7rem;
+                text-align: center;
+                display: block;
+            }
+
+          }
+
+    }
+
+  
+  
+    
+}

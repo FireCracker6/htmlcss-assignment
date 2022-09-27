@@ -1,0 +1,32 @@
+.__d-none { display: none;}
+.__d-flex {display: flex;}
+.__d-grid {display: grid;}
+
+.__j-c-start { justify-content: flex-start;}
+.__j-c-end { justify-content: flex-end;}
+.__j-c-center {justify-content: center;}
+.__j-c-between {justify-content: space-between;}
+
+/* .container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @include md {
+        max-width: $breakpoint-md-max-width;
+    }
+    @include lg {
+        max-width: $breakpoint-md-max-width;
+    }
+    @include xl {
+        max-width: $breakpoint-md-max-width;
+    }
+    @include xxl {
+        max-width: $breakpoint-md-max-width;
+    }
+    @include ultra-xxl {
+        max-width: $breakpoint-md-max-width;
+    }
+} */

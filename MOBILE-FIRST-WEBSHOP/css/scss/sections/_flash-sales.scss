@@ -1,0 +1,203 @@
+
+.FLASH__SALES {
+    display: flex;
+    justify-content: center;
+    background-color: $color-theme-dark;
+    width: 100%;
+    
+    }
+    
+        .flexboxparent {
+            display: flex;
+         
+            height: 100%;
+          
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+            .item-1 {
+                display:flex;
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+    
+             
+    
+                
+                    }
+                    .flash-sale {
+                    
+                        width: 255px;
+                        height: 100%;
+                        color: $color-white;
+                        justify-content: center;
+                        text-align: center;
+                        align-items: center; 
+                        align-self: stretch; 
+                        padding-top: 3rem;
+                        background-color: $color-theme;
+
+                        h1 strong  {
+                            font-size: 3.8rem;
+                        }
+
+                        p {
+                            font-size: 1.6rem;
+                            font-weight: $font-weight-medium;
+                        
+                        }
+                    
+                    }
+                    
+    
+            .item-2 {
+                display: flex;
+                align-items:center;
+                justify-content:center;
+            
+                width: 100%;
+                height: 200px;
+                padding: 0rem;
+
+                .btn-shop-now {
+                    position: absolute;
+                    display: block;
+                    align-self: center;
+                    padding-top: 6rem;
+                    overflow: visible; 
+                    
+                }
+               
+    
+            }
+    
+            .ticker {
+            
+                display: flex;
+                width: 340px;
+                justify-content: space-between;
+                height: 140px;
+                align-self: stretch;
+                margin-top: 1.3rem;
+                
+            }
+                    .counter {
+                        width: 75px;
+                        height: 75px;
+                            /* solution #1 dashed border (not working with this solution in safari) background-clip does not look pretty in opera but showing it here as an example */
+                        /* using dotted border to compromise safari*/
+    
+                            /*    
+                        border: 3px dotted $color-theme;
+                        border-radius: 50%;
+                        background-clip: padding-box;
+                        background-color: $color-white;  
+                        */ 
+    
+                            /* solution #2 using the adobe xd image as background */
+                        background-image: url(/MOBILE-FIRST-WEBSHOP/images/flash-sale-bg.svg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                
+                        
+                        text-align: center;
+                        padding-top: 1.2rem;
+
+                        h2 {
+                            font-weight: $font-weight-bold;
+                            color: $color-theme;
+                            margin: -2px;
+                            padding-top: 0px;
+                            font-family: $font-play;
+                            font-size: 1.4rem;
+                        }
+                        p {
+                            font-weight: $font-weight-regular;
+                            font-size: 0.71rem;
+                            font-family: $font-roboto;
+                        }
+                
+            
+                        
+                        
+                    }
+                  
+                        
+                    .btn-white {
+                            
+                            font-size: 0.8rem;
+                            
+                        
+                        }
+                            
+                 
+
+@media (min-width: 1000px) {
+
+    .FLASH__SALES {
+        height: 435px;
+    }
+        .flexboxparent {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+            .item-1 {
+                justify-content: flex-start;
+                height: 70%;
+            }
+            .item-2 {
+                justify-content: end;
+
+                .btn-shop-now {
+                    display: block;
+                    align-self: center;
+                    padding-top: 16rem;
+                    padding-right: 2.7rem;
+                    overflow: hidden;
+                    
+                }
+
+                .btn-shop-now {
+                    margin-right: 160px;
+                    margin-top: 140px;
+                  }
+            }
+            .item-2 
+            .ticker {
+                width: 548px;
+                height: 170px;
+                padding-top: 7.5rem;
+                
+            }
+                .counter {
+                    width: 109px;
+                    height: 109px;
+                    padding-top: 1.7rem;
+
+                    h2 {
+                        margin: -5px;
+                            font-family: $font-play;
+                            font-size: 2.25rem;
+                        }
+
+                        p {
+                            font-weight: $font-weight-regular;
+                            font-size: 0.9rem;
+                            margin-top: 0.1rem;
+                            font-family: $font-roboto;
+                        }
+                
+            
+                }
+            
+                
+            .btn-white {
+                  
+                    font-size: 1.125rem;
+                   
+                
+                }
+           
+}

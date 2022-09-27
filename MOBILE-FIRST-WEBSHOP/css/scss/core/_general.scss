@@ -1,0 +1,270 @@
+
+.btn-theme {
+    background-color: $color-theme;
+    color: $color-white;
+    border-radius: $border-radius-medium;
+    font-weight: $font-weight-medium;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+
+    &:hover {
+        background-color: $color-theme-dark;
+        color: $color-white;
+    }
+}
+
+
+.btn-white {
+    background-color: $color-white;
+    color: $color-theme;
+    border-radius: $border-radius-medium;
+    font-weight: $font-weight-medium;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+
+    &:hover {
+        background-color: $color-theme-dark;
+        color: $color-white;
+    }
+}
+
+.bg-theme {
+    background-color: $color-theme;
+}
+.bg-theme-dark {
+    background-color: $color-theme-dark;
+}
+.text-theme {
+   color: $color-theme;
+}
+.instock {
+    color: $color-product-instock;
+}
+.outofstock {
+    color: $color-product-outofstock;
+}
+
+.required {
+    color: $color-theme;
+}
+.section-title {
+    color: $color-theme-dark;
+    text-align: center;
+    padding: 3rem 0;
+
+    h1 {
+        font-family: $font-play;
+        font-weight: $font-weight-bold;
+        font-size: 2.5rem;
+
+        span {
+            color: $color-theme;
+        }
+
+    }
+    p {
+        margin: 1rem 0;
+    }
+}
+  
+  
+ a {
+    color: $color-theme;
+    font-weight: $font-weight-regular;
+    text-decoration: none;
+    &:hover {
+        color: $color-theme-dark;
+        text-decoration: underline;
+        }
+}
+  
+footer {
+    background-color: #000;
+}
+
+
+
+.form-theme .card {
+    padding: 1.5rem;
+    border: none;
+    border-radius: $border-radius-small;
+    background-color: $color-gray-40;
+
+    .card-body h1 {
+        font-family: $font-roboto;
+        color: $color-theme-dark;
+        font-weight: $font-weight-medium;
+        font-size: 1.5rem;
+     }
+     .card-body .card-text {
+        margin: 1.5rem 0;
+        line-height: 2;
+        a {
+          
+            font-weight: $font-weight-medium;
+           
+    }
+    }
+    card-text.text-small {
+        color: $color-gray-50;
+        font-size: 0.875rem;
+        
+    }
+}
+
+        .form-theme form input[type=checkbox] {
+          height: 20px;
+          width: 20px; 
+          display: inline-block; 
+        }
+      
+        .form-theme form input[type=text],
+        .form-theme form input[type=email],
+        .form-theme form input[type=password] {
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: $border-radius-small;
+        padding: 0.5rem 0.9rem;
+        margin: 0.2rem 0;
+        }
+        .form-theme form input:focus {
+            outline: 0;
+        box-shadow: 0 0 2px 0 $color-gray-20;
+        }
+
+        .site-title {
+            background-color: $color-theme-dark-light;
+            color: #fff;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+
+            .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                h1 {
+                    margin: 0;
+                    color: $color-theme;
+                    font-size: 1.5rem;
+                    font-family: $font-roboto;
+                    font-weight: $font-weight-medium;
+                }
+                nav ul {
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                }
+                .breadcrumb {
+            
+                    list-style: none;
+                    margin: 0;
+
+                    li {
+                        display: inline;
+                        font-size: 18px;
+
+                        a {
+                            color:$color-theme;
+                            text-decoration: none;
+                        }
+                        &:hover {
+                            color: $color-theme-light;
+                            text-decoration: underline;
+                        }
+                    }
+                    li+li:before {
+                        padding:  0 0.7rem 0 1rem;
+                        color: $color-white;
+                        content: "/\00a0";
+                    }
+                
+                  }
+            }
+        }
+      
+     
+ 
+    
+       
+               
+            .signup-signin {
+                padding: 6rem 0;
+
+                .container {
+                    display: grid;
+                    grid-template-columns: 1fr ;
+                    column-gap: 2rem;
+                    row-gap: 2rem;
+                    align-items: flex-start;
+                    grid-auto-flow: row;
+                }
+            }
+               
+                    
+        .external-logins {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        z-index: 0;
+
+        .label {
+            background-color: $color-gray-40;
+            padding: 0 0.8rem;
+        
+        }
+        .line {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            right: 0;
+            border: 1px solid $color-gray-10;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        }
+       
+        .external-socialmedia-buttons {
+        display: grid;
+        grid-template-columns: 1fr ;
+        column-gap: 2rem;
+        
+        place-items: center;
+
+        .facebook-button {
+            text-align: left;
+            }
+
+            button {
+                background-image: url(../images/buttons/facebook-login-button.svg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                border: none;
+               height: 42px;
+                width: 235px; 
+              
+             }
+             .google-button {
+                text-align: right;
+
+                button {
+                    background-image: url(../images/buttons/google-login-button.svg);
+                    background-size: 100%;
+                   background-repeat: no-repeat;
+                   border: none;
+                   height: 42px;
+                   width: 235px;
+                
+                }
+            }
+        }
+     
+       
+    
+            .external-socialmedia-buttons .facebook-button button:hover,
+            .external-socialmedia-buttons .google-button button:hover {
+                        filter: brightness(90%);
+                    }

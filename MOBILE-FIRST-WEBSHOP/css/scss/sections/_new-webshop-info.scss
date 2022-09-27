@@ -1,0 +1,67 @@
+.NEW__webshop__info {
+    padding-top: 4rem;
+}
+
+    .NEW__card {
+        
+        height: auto;
+        border: none;
+        
+        }
+          
+          .NEW__cards {
+            display: grid;
+            max-width: 1600px;
+            margin: 0 auto;
+            row-gap: 0.8rem;
+            column-gap: 0.7rem;
+            /* set to autofit for larger screens on grid-template-columns instead of 1fr */
+            grid-template-columns: repeat(1fr, minmax(220px , 1fr));
+            font-size: 1rem;
+
+            .info-box {
+                background-color: $color-theme-light;
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+               
+                flex: 1; 
+                border-radius: $border-radius-small;
+               
+                transition: all 0.2s ease-in-out;
+
+                h1 {
+                    color: $color-theme;
+                font-size: 1rem;
+                font-weight: $font-weight-medium;
+                transition: all 0.3s ease-in-out;
+                margin-left: 2rem;
+                }
+                p {
+                    margin-left: 2rem;
+                    }
+
+                    &:hover {
+                        background-color: $color-theme;
+                        color: $color-white;
+
+                        img {
+                            filter: brightness(1000%);
+                        }
+                        h1 {
+                            color: $color-white;
+                        }
+                    }
+            }
+          }
+
+  
+@media (min-width: 1000px) {
+    .NEW__cards {
+        display: grid;
+        /* set to autofit for larger screens on grid-template-columns instead of 1fr */
+        /* set font-size to 1rem for larger screens 0.8rem fits for ipad air and change the width to 320 */
+        grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
+        font-size:0.8rem;
+    }
+}

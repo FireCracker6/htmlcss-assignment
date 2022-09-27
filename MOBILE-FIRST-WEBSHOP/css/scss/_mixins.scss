@@ -1,0 +1,31 @@
+@mixin default-headline {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: $font-play;
+}
+
+
+@mixin default-font {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: $font-roboto;
+}
+
+@mixin center-content($height: 100vh) {
+    height: $height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@mixin set-colors($bgcolor) {
+    background-color: $bgcolor;
+    color: set-color($bgcolor);
+}
+
+@mixin set-dynamic-colors($bgcolor, $procent: 50%) {
+    background-color: $bgcolor;
+    color: set-dynamic-color($bgcolor, $procent );
+    
+}
