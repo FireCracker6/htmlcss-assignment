@@ -296,7 +296,8 @@ footer {
                 top: 121%;
                 right: 1rem;
                 list-style: none;
-                padding: 0.83rem;
+                /* center aligining the menu tested in edge, opera, safari */
+                padding: .85rem;
                 font-size: 1.25rem;
                 border-radius: var(--border-radius-medium);
                 background-color: var(--color-white);
@@ -339,7 +340,7 @@ footer {
                 }
                 a.arrowlink-cart:hover::before {
                     content: "Add to cart";
-                     background-color: #b72929;
+                     background-color: var(--color-theme);;
                     position: absolute ;
                     display: inline-block;
                     align-content: center;
@@ -355,26 +356,25 @@ footer {
                     padding-top: 0.4em;
                     z-index: 1 ;
                 }
-                a.arrowlink-cart:hover::after {
-                    content: "";
-                    position: absolute;
-                    display:flex;
-                    top: -0.1rem;
-                    left: -1em;
-                    width: 0;
-                    height: 0;
-                    border-top: 12px solid transparent;
-                    border-left: 14px solid #b72929;;
-                    border-bottom: 12px solid transparent;
-                 z-index: 1;
-                 
-                }
+                    a.arrowlink-cart:hover::after {
+                        content: "";
+                        position: absolute;
+                        top: -0.1rem;
+                        left: -1em;
+                        width: 0;
+                        height: 0;
+                        border-top: 12px solid transparent;
+                        border-left: 14px solid var(--color-theme);
+                        border-bottom: 12px solid transparent;
+                    z-index: 1;
+                    
+                    }
                 a.arrowlink-quickview {
                     position: relative;
                 }
                 a.arrowlink-quickview:hover::before {
                     content: "Quick view";
-                     background-color: #b72929;
+                     background-color: var(--color-theme);;
                     position: absolute ;
                     display: inline-block;
                     align-content: center;
@@ -390,26 +390,25 @@ footer {
                     padding-top: 0.4em;
                     z-index: 1 ;
                 }
-                a.arrowlink-quickview:hover::after {
-                    content: "";
-                    position: absolute;
-                    display:flex;
-                    top: -0.1rem;
-                    left: -1em;
-                    width: 0;
-                    height: 0;
-                    border-top: 12px solid transparent;
-                    border-left: 14px solid #b72929;;
-                    border-bottom: 12px solid transparent;
-                 z-index: 1;
-                 
-                }
+                    a.arrowlink-quickview:hover::after {
+                        content: "";
+                        position: absolute;
+                        top: -0.1rem;
+                        left: -1em;
+                        width: 0;
+                        height: 0;
+                        border-top: 12px solid transparent;
+                        border-left: 14px solid var(--color-theme);;
+                        border-bottom: 12px solid transparent;
+                    z-index: 1;
+                    
+                    }
                 a.arrowlink-shuffle {
                     position: relative;
                 }
                 a.arrowlink-shuffle:hover::before {
                     content: "Shufffle";
-                     background-color: #b72929;
+                     background-color: var(--color-theme);;
                     position: absolute ;
                     display: inline-block;
                     align-content: center;
@@ -425,26 +424,25 @@ footer {
                     padding-top: 0.4em;
                     z-index: 1 ;
                 }
-                a.arrowlink-shuffle:hover::after {
-                    content: "";
-                    position: absolute;
-                    display:flex;
-                    top: -0.1rem;
-                    left: -1em;
-                    width: 0;
-                    height: 0;
-                    border-top: 12px solid transparent;
-                    border-left: 14px solid #b72929;;
-                    border-bottom: 12px solid transparent;
-                 z-index: 1;
-                 
-                }
+                    a.arrowlink-shuffle:hover::after {
+                        content: "";
+                        position: absolute;
+                        top: -0.1rem;
+                        left: -1em;
+                        width: 0;
+                        height: 0;
+                        border-top: 12px solid transparent;
+                        border-left: 14px solid var(--color-theme);
+                        border-bottom: 12px solid transparent;
+                    z-index: 1;
+                    
+                    }
                 a.arrowlink-favorite {
                     position: relative;
                 }
                 a.arrowlink-favorite:hover::before {
                     content: "Add favorite";
-                     background-color: #b72929;
+                     background-color: var(--color-theme);;
                     position: absolute ;
                     display: inline-block;
                     align-content: center;
@@ -460,121 +458,20 @@ footer {
                     padding-top: 0.4em;
                     z-index: 1 ;
                 }
-                a.arrowlink-favorite:hover::after {
-                    content: "";
-                    position: absolute;
-                    display:flex;
-                    top: -0.1rem;
-                    left: -1em;
-                    width: 0;
-                    height: 0;
-                    border-top: 12px solid transparent;
-                    border-left: 14px solid #b72929;;
-                    border-bottom: 12px solid transparent;
-                 z-index: 1;
-                 
-                }
-                a#tooltipcart {
-                    position: relative ;
+                    a.arrowlink-favorite:hover::after {
+                        content: "";
+                        position: absolute;
+                        top: -0.1rem;
+                        left: -1em;
+                        width: 0;
+                        height: 0;
+                        border-top: 12px solid transparent;
+                        border-left: 14px solid var(--color-theme);
+                        border-bottom: 12px solid transparent;
+                    z-index: 1;
+                    
                     }
-                    a#tooltipcart:hover::after {
-                    background-image: url(/images/tooltip-new-arrivals.svg);
-                    background-repeat:no-repeat;
-                    content: "Add to cart" ;
-                    
-                    position: absolute ;
-                    display: inline-block;
-                    top:0em ;
-                    left: -8em ;
-                    min-width: 95px ;
-                    min-height: 30px;
-                    font-size: 0.8rem;
-                    text-align: center;
-                    color: #fff;
-                    
-                    padding-bottom: 4px ;
-                    padding-top: 4px ;
-                    
-                    
-                    z-index: 1 ;
-                    }
-                 
-
-              a#tooltipsearch {
-                position: relative ;
-              }
-                a#tooltipsearch:hover::after {
-                    background-image: url(/images/tooltip-new-arrivals.svg);
-                background-repeat:no-repeat;
-                    content: "Search" ;
-                
-                    position: absolute ;
-                    display: inline-block;
-                    top:0em ;
-                    left: -8em ;
-                    min-width: 95px ;
-                    min-height: 30px;
-                    font-size: 0.8rem;
-                    text-align: center;
-                    color: #fff;
-                    
-                    padding-bottom: 4px ;
-                    padding-top: 4px ;
-                
-                
-                    z-index: 1 ;
-                }
-        
-              a#tooltipfav {
-                position: relative ;
-              }
-                a#tooltipfav:hover::after {
-                    background-image: url(/images/tooltip-new-arrivals.svg);
-                background-repeat:no-repeat;
-                    content: "Add favorite" ;
-                
-                    position: absolute ;
-                    display: inline-block;
-                    align-items: center;
-                    top:0em ;
-                    left: -8em ;
-                    min-width: 95px ;
-                    min-height: 30px;
-                    font-size: 0.8rem;
-                    text-align: center;
-                    color: #fff;
-                    
-                    padding-bottom: 4px ;
-                    padding-top: 4px ;
-                
-                
-                    z-index: 1 ;
-                }
-              a#tooltipshuffle {
-                position: relative ;
-                }
-                a#tooltipshuffle:hover::after {
-                    background-image: url(/images/tooltip-new-arrivals.svg);
-                background-repeat:no-repeat;
-                    content: "Shuffle" ;
-                
-                    position: absolute ;
-                    display: inline-block;
-                    align-items: center;
-                    top:0em ;
-                    left: -8em ;
-                    min-width: 95px ;
-                    min-height: 30px;
-                    font-size: 0.8rem;
-                    text-align: center;
-                    color: #fff;
-                    
-                    padding-bottom: 4px ;
-                    padding-top: 4px ;
-                
-                
-                    z-index: 1 ;
-                }
+            
               /* FOR MOBILE NEW ARRIVALS AND FEATURED PRODUCTS */
               .MOBILE_ARRIVALS {
                 display: block;
@@ -1300,7 +1197,6 @@ text-align: left;
                     display: flex;
                     width: 340px;
                     justify-content: space-between;
-                 /*    border: 1px solid sandybrown; */
                     height: 140px;
                     align-self: stretch;
                     margin-top: 1.3rem;
@@ -1309,19 +1205,27 @@ text-align: left;
                         .counter {
                             width: 75px;
                             height: 75px;
+                              /* solution #1 dashed border (not working with this solution in safari) background-clip does not look pretty in opera but showing it here as an example */
+                           /* using dotted border to compromise safari*/
+
+                              /*    
+                            border: 3px dotted var(--color-theme);
                             border-radius: 50%;
-                            border: 5px solid var(--color-theme);
-                            border-style: dotted; 
-                            border-block-color: rgb(237, 140, 232); 
-                            /* not using outline -- because safari does not support it
-                             */
-                           /*   outline: 3px;
-                             outline-color: var(--color-theme); 
-                             outline-style: dotted ;*/
+                            background-clip: padding-box;
+                            background-color: var(--color-white);  
+                            */ 
+
+                             /* solution #2 using the adobe xd image as background */
+                           background-image: url(/MOBILE-FIRST-WEBSHOP/images/flash-sale-bg.svg);
+                           background-repeat: no-repeat;
+                           background-size: cover;
+                    
+                         
                             text-align: center;
-                            padding-top: 1rem;
-                        
-                            background-color: var(--color-white);
+                            padding-top: 1.2rem;
+             
+                            
+                            
                         }
                         .counter h2 {
                             font-weight: var(--font-weight-bold);
@@ -1354,64 +1258,17 @@ text-align: left;
                             }
                           
          
- 
+/* Redid this to a grid layout for better responsiveness  */
+.NEW__webshop__info {
+    padding-top: 4rem;
+}
 
-    /* webshop-info */
-    .webshop-info {
-        padding: 4rem 0;
-    }
-    .webshop-info .container {
-        max-width: 1600px;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .webshop-info .info-box {
-        background-color: var(--color-theme-light);
-        padding: 1rem;
-        display: flex;
-        align-items: center;
-        margin: 0 1rem;
-        flex: 1; 
-        border-radius: var(--border-radius-small);
-        transition: all 0.2s ease-in-out;
-    }
-    .webshop-info .info-box:hover {
-        background-color: var(--color-theme);
-        color: var(--color-white);
-    }
-
-    .webshop-info .info-box img {
-        margin-right: 1.5rem;
-        transition: all 0.2s ease-in-out;
-        filter: brightness(100%);
-    }
-    .webshop-info .info-box:hover img {
-        filter: brightness(1000%);
-    }
-    
-    .webshop-info .info-box h1 {
-        color: var(--color-theme);
-       font-size: 1rem;
-       font-weight: var(--font-weight-medium);
-       transition: all 0.3s ease-in-out;
-    }
-        .webshop-info .info-box:hover h1 {
-            color: var(--color-white);
+    .NEW__card {
+        
+        height: auto;
+        border: none;
+        
         }
-
-
-
-        /* Redid this to a grid layout for better responsiveness  */
-        .NEW__webshop__info {
-          padding-top: 4rem;
-        }
-
-        .NEW__card {
-         
-            height: auto;
-            border: none;
-            
-          }
           
           .NEW__cards {
             display: grid;
@@ -1442,21 +1299,23 @@ text-align: left;
             transition: all 0.3s ease-in-out;
             margin-left: 2rem;
             }
-            .NEW__cards .info-box p {
-            
-            margin-left: 2rem;
-            }
+                .NEW__cards .info-box p {
+                
+                margin-left: 2rem;
+                }
 
-                .NEW__cards  .info-box:hover {
-                    background-color: var(--color-theme);
-                    color: var(--color-white);
-                }
-                .NEW__cards .info-box:hover img {
-                    filter: brightness(1000%);
-                }
-                .NEW__cards .info-box:hover h1 {
-                    color: var(--color-white);
-                }
+                    .NEW__cards  .info-box:hover {
+                        background-color: var(--color-theme);
+                        color: var(--color-white);
+                    }
+                    .NEW__cards .info-box:hover img {
+                        filter: brightness(1000%);
+                    }
+                    .NEW__cards .info-box:hover h1 {
+                        color: var(--color-white);
+                    }
+
+
 
 /* Shop by category */
 .shop-by-category {
@@ -1535,16 +1394,16 @@ text-align: left;
 
 /* TOP sellers grid section */
 
-   .TOPSELLER__grid {
-        display: none;
-        grid-template-columns: repeat( 4, 1fr );
-        grid-template-rows: repeat(2, 1fr );
-       height: 100%;
-       width: 100%;
-       column-gap: 1rem;
-       row-gap: 1rem;
- 
-    }
+.TOPSELLER__grid {
+    display: none;
+    grid-template-columns: repeat( 4, 1fr );
+    grid-template-rows: repeat(2, 1fr );
+    height: 100%;
+    width: 100%;
+    column-gap: 1rem;
+    row-gap: 1rem;
+
+}
      
      
     .TOPSELLER__grid .item-1 {
@@ -1581,34 +1440,31 @@ text-align: left;
 
     /* For mobile devices */
 
-    .TOPSELLER-MOBILE__grid {
-        display: grid;
-        grid-template-columns: repeat( 1, 1fr );
-        grid-template-rows: repeat(12, 1fr );
-       
-       margin-left: 0rem;
-       margin-right: 0rem;
-       place-items: center;
-     height: 1200px;
-       row-gap: 0.5rem;
-   
+.TOPSELLER-MOBILE__grid {
+    display: grid;
+    grid-template-columns: repeat( 1, 1fr );
+    grid-template-rows: repeat(12, 1fr );
     
-    }
+    margin-left: 0rem;
+    margin-right: 0rem;
+    place-items: center;
+    height: 1200px;
+    row-gap: 0.5rem;
+
+
+}
 
     .TOPSELLER-MOBILE__grid .item-1 {
         grid-column: 1 / -1;
         grid-row: 1 / 5;
         width: 100%;
         height: 100%;
-        
-       /*  background-color: rgb(99, 219, 179); */
 
     }
     
      .TOPSELLER-MOBILE__grid .item-2 {
         grid-column: 1 / -1;
         grid-row: 5 / 9;
-       /*  background-color: rgb(99, 219, 179); */
         width: 100%;
         height: 100%;
     
@@ -1617,37 +1473,36 @@ text-align: left;
     .TOPSELLER-MOBILE__grid .item-3 {
         grid-column: 1 / -1;
         grid-row: 9 / -1;
-      /*   background-color: rgb(115, 205, 175); */
         width: 100%;
         height: 100%;
 
     }
-    .TOPSELLER-MOBILE__grid .item-1.photo img, .TOPSELLER-MOBILE__grid .item-2.photo img, .TOPSELLER-MOBILE__grid .item-3.photo img {
-        object-fit:cover;
-        width: 100%;
-        height:100%;
-    /*     background-color: azure; */
-    }
-    .APPAREL__sections.MOBILE {
-        display: block;
-    }
-    .APPAREL__sections.NOMOBILE {
-        display: none;
-    }
+        .TOPSELLER-MOBILE__grid .item-1.photo img, .TOPSELLER-MOBILE__grid .item-2.photo img, .TOPSELLER-MOBILE__grid .item-3.photo img {
+            object-fit:cover;
+            width: 100%;
+            height:100%;
+
+        }
+.APPAREL__sections.MOBILE {
+    display: block;
+}
+.APPAREL__sections.NOMOBILE {
+    display: none;
+}
 
     .APPAREL__sections .NOMOBILE__container {
         display: none;
     }
 
-    .SUBSCRIBE {
-        background-color: var(--color-gray-4);
-    
-        }
-        .SUBSCRIBE .container .SUBSCRIBE__container {
-            display: flex;
-            flex-direction: column;
+.SUBSCRIBE {
+    background-color: var(--color-gray-4);
 
-        }
+    }
+    .SUBSCRIBE .container .SUBSCRIBE__container {
+        display: flex;
+        flex-direction: column;
+
+    }
  
     
     .SUBSCRIBE__item-1 {
@@ -1705,10 +1560,10 @@ text-align: left;
                 background-color: var(--color-theme-dark);
                 transition: 0.3s ease-in-out;
             }
-        .SUBSCRIBE__item-1  .sub-text .section-title {
-            
-                text-align: left;
-            }
+                .SUBSCRIBE__item-1  .sub-text .section-title {
+                    
+                        text-align: left;
+                }
     
         
                .SUBSCRIBE__item-1  form {
@@ -1736,20 +1591,20 @@ text-align: left;
                 height: 100%;
                }
 
-
-               .F__Copy  {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 80px;
-                background-color: #000;
-                color: #fff;
-                font-size: 1.1rem;
-                text-align: center; 
-                margin-right: 2rem;
-                white-space: nowrap;
-                padding-top: 0.8rem;
-               }
+/* Simple footer */
+.F__Copy  {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 80px;
+background-color: #000;
+color: #fff;
+font-size: 1.1rem;
+text-align: center; 
+margin-right: 2rem;
+white-space: nowrap;
+padding-top: 0.8rem;
+}
   
 /* Media min-width was tested with iphone and ipad (landscape and regular)  */
 @media (min-width: 420px) {
@@ -1773,6 +1628,8 @@ text-align: left;
 
 }     
 @media (min-width:1000px) {
+
+
     .top-menu .container {
         display: flex;
         justify-content: space-between;
@@ -1876,25 +1733,25 @@ text-align: left;
                 width: 50%;
             }
 
-        .NEW__cards {
-            display: grid;
-            /* set to autofit for larger screens on grid-template-columns instead of 1fr */
-           /* set font-size to 1rem for larger screens 0.8rem fits for ipad air and change the width to 320 */
-            grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
-            font-size:0.8rem;
-        }
-        .shop-by-category {
-            display: flex;
-        }
-        .shop-by-category .grid {
-            display: grid;
-        }
-        .DISC__container {
-         
-            flex-direction: row; 
-            justify-content: space-between;
-            width: 100%;
-        }
+.NEW__cards {
+    display: grid;
+    /* set to autofit for larger screens on grid-template-columns instead of 1fr */
+    /* set font-size to 1rem for larger screens 0.8rem fits for ipad air and change the width to 320 */
+    grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
+    font-size:0.8rem;
+}
+.shop-by-category {
+    display: flex;
+}
+.shop-by-category .grid {
+    display: grid;
+}
+.DISC__container {
+    
+    flex-direction: row; 
+    justify-content: space-between;
+    width: 100%;
+}
         .DISC__item {
             width: 100%;
             /* set height to 418px on larger screens */
@@ -1906,13 +1763,13 @@ text-align: left;
             justify-content: space-between;
            
         }
-        .FLASH__SALES {
-            height: 435px;
-        }
-        .flexboxparent {
-            flex-direction: row;
-            align-items: flex-start;
-        }
+.FLASH__SALES {
+    height: 435px;
+}
+    .flexboxparent {
+        flex-direction: row;
+        align-items: flex-start;
+    }
         .item-1 {
             justify-content: flex-start;
             height: 70%;
@@ -1928,27 +1785,26 @@ text-align: left;
             width: 548px;
             height: 170px;
             padding-top: 7.5rem;
-          /*   border: 1px solid white; */
             
         }
-        .counter {
-            width: 109px;
-            height: 109px;
-            padding-top: 1.5rem;
-    
-        }
-        .counter h2 {
-         margin: -5px;
-            font-family: var(--font-play);
-            font-size: 2.25rem;
-        }
-            .counter p {
-                font-weight: var(--font-weight-regular);
-                font-size: 0.9rem;
-                margin-top: 0.1rem;
-                font-family: var(--font-roboto);
+            .counter {
+                width: 109px;
+                height: 109px;
+                padding-top: 1.7rem;
+        
             }
-    
+            .counter h2 {
+            margin: -5px;
+                font-family: var(--font-play);
+                font-size: 2.25rem;
+            }
+                .counter p {
+                    font-weight: var(--font-weight-regular);
+                    font-size: 0.9rem;
+                    margin-top: 0.1rem;
+                    font-family: var(--font-roboto);
+                }
+        
         .btn-white {
               
                 font-size: 1.125rem;
@@ -1963,21 +1819,21 @@ text-align: left;
             overflow: hidden;
             
         }
-        .APPAREL__sections .card .card-body h1 {
-          
-            margin-top: 0rem;
-            margin-bottom: 3rem;
-           
-        }
+.APPAREL__sections .card .card-body h1 {
+    
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+    
+}
         .APPAREL__sections .card .card-body button {
             display: none;
         }
         .MOBILE_ARRIVALS {
             display: none;
-          }
-          .NO-MOBILE_ARRIVALS {
+            }
+            .NO-MOBILE_ARRIVALS {
             display: block;
-          }
+            }
     
         .TOPSELLER-MOBILE__grid {
             display: none;
@@ -2010,12 +1866,7 @@ text-align: left;
             background-color: #34495e;
           }
           
-      
-
-        
-
-       
-       
+   
     
 }
 

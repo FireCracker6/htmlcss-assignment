@@ -139,7 +139,7 @@ html {
     position: relative;
     height: 100%;
     display: flex;
-    justify-content: left;
+/*     justify-content: left; */
 /*     border: 1px solid wheat; */
 padding: 0 0.6rem 0 2rem;
 }
@@ -171,22 +171,27 @@ padding: 0 0.6rem 0 2rem;
 .Content-wrapper .content-container {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .Content-wrapper .content-container .SX-summary {
-    width: 70%;
-    padding: 30px;
+    width: 100%;
+    padding: 6rem;
     padding-bottom: 50px;
     text-align: left;
     font-size: medium;
     font-family: 'Quicksand', sans-serif;
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    border: 1px solid orange;
+    background-color: aliceblue;
 }
 .content-details {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
     font-family: 'Quicksand', sans-serif;
+    background-color: aliceblue;
    
     padding: 0 1rem 0 4rem;
 }
@@ -195,10 +200,15 @@ padding: 0 0.6rem 0 2rem;
 /*     border: 1px solid green; */
     text-align: left;
     font-size: 1rem;
+  /*   border: 3px dotted orange; */
+    background-color: aliceblue;
 }
 .content-details .details-right {
-    width: 100%;
+    width: 50%;
   /*   border: 1px solid green; */
     text-align: left;
     font-size: 1rem;
+    border: 3px dotted orange;
+    background-color: aliceblue;
+    color: #7999ac;
 }
