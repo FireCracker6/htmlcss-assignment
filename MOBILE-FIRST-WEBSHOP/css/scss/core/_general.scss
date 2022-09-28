@@ -239,7 +239,7 @@ footer {
             }
 
             button {
-                background-image: url(../images/buttons/facebook-login-button.svg);
+                background-image: url(/MOBILE-FIRST-WEBSHOP/images/buttons/facebook-login-button.svg);
                 background-size: 100%;
                 background-repeat: no-repeat;
                 border: none;
@@ -251,7 +251,7 @@ footer {
                 text-align: right;
 
                 button {
-                    background-image: url(../images/buttons/google-login-button.svg);
+                    background-image: url(/MOBILE-FIRST-WEBSHOP/images/buttons/google-login-button.svg);
                     background-size: 100%;
                    background-repeat: no-repeat;
                    border: none;
@@ -268,3 +268,30 @@ footer {
             .external-socialmedia-buttons .google-button button:hover {
                         filter: brightness(90%);
                     }
+
+
+@media (min-width: 1000px) {
+    .signup-signin .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        column-gap: 2rem;
+        row-gap: 0rem;
+        align-items: flex-start;
+        grid-auto-flow: row;
+    }
+    #signin_rememberme {
+        background-color: #34495e;
+      }
+}
+
+@media(min-width: 1400px) {
+
+    .external-socialmedia-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        
+        place-items: initial;
+
+        }
+ }

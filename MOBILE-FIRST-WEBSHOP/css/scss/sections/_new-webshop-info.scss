@@ -32,10 +32,10 @@
 
                 h1 {
                     color: $color-theme;
-                font-size: 1rem;
-                font-weight: $font-weight-medium;
-                transition: all 0.3s ease-in-out;
-                margin-left: 2rem;
+                    font-size: 1rem;
+                    font-weight: $font-weight-medium;
+                    transition: all 0.3s ease-in-out;
+                    margin-left: 2rem;
                 }
                 p {
                     margin-left: 2rem;
@@ -64,4 +64,12 @@
         grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
         font-size:0.8rem;
     }
+}
+
+@media(min-width: 1200px) {
+    .NEW__cards {
+        font-size: 1rem;
+    }
+   
+    
 }

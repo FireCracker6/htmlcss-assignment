@@ -81,8 +81,8 @@
             .menu-link  {
                 display: block; 
                 color: $color-white;
-                 text-decoration: none;
-                 margin: 0;
+                text-decoration: none;
+                margin: 0;
                 justify-content: center;
                 text-align: end;
                 padding-right: 0.1rem;
@@ -226,48 +226,11 @@
                 &:last-child {
                     margin: 0 0 0 0.3rem;
         
-                }
-            
-    
+                }         
             }
-           
-
-
         }
-
-    }
-
-
-          
+    }       
 }
-
- 
-    
-
-
-
- 
-
- 
- 
-      .main-menu .menu-links #mcart:hover .badge {
-         background-color: $color-theme-dark;
-      }
-
-    
-
- 
-
- 
-
-   
-
-
-
-
-
- 
-
 
 
 @media (min-width:1000px) {
@@ -296,44 +259,33 @@
         display: flex;
         justify-content: space-between;
 
-        .dropdown{
-      
-            display: inline-block;
+            .dropdown{
         
-        }
-    
-        .d-container {
-            display: flex;
-            justify-content: space-between;
-        }
-       
-        }
-        
-        .menu-links {
-          
-            display: inline-block;
-            .links  {
                 display: inline-block;
-              
-                
-          
-           
-            } 
             
+            }
+        
+            .d-container {
+                display: flex;
+                justify-content: space-between;
+            }
+        
     }
+            
+    .menu-links {
+    
+        display: inline-block;
+
+        .links  {
+            display: inline-block;
+        } 
+        
+    }
+
     .social-media {
         display: inline-block;
-     
-     
-     
+
     }   
-  
-    
-    
-        
-  }
-
-
-       
+  }    
 }
  

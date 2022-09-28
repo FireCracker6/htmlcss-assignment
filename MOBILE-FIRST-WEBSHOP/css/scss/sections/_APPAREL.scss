@@ -303,7 +303,17 @@
               .NO-MOBILE_ARRIVALS {
                 display: none;
               }
-
+              .APPAREL__sections.MOBILE {
+                display: block;
+            }
+            .APPAREL__sections.NOMOBILE {
+                display: none;
+            }
+            
+                .APPAREL__sections .NOMOBILE__container {
+                    display: none;
+                }
+                 
                 
 /* Media min-width was tested with iphone and ipad (landscape and regular)  */
 @media (min-width: 420px) {
