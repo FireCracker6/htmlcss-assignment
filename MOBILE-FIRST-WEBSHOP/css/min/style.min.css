@@ -1051,14 +1051,6 @@ a.arrowlink-favorite:hover::after {
     padding-bottom: 0rem;
   }
 }
-@media screen and (min-device-width: 720px) and (max-device-width: 959px) and (orientation: portrait) {
-  .APPAREL__sections .card .card-body h1 {
-    margin-top: 0.1rem;
-    margin-bottom: 1rem;
-    padding-top: -3rem;
-    padding-bottom: 1rem;
-  }
-}
 @media (min-width: 768px) {
   .APPAREL__sections .card .card-body.card-body.TOPSELLER-body h1 {
     margin-top: 0.8rem;
