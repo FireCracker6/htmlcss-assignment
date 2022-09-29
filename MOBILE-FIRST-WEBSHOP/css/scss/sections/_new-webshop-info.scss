@@ -1,4 +1,5 @@
 .NEW__webshop__info {
+
     padding-top: 4rem;
 }
 
@@ -9,7 +10,8 @@
         
         }
           
-          .NEW__cards {
+        .NEW__cards {
+
             display: grid;
             max-width: 1600px;
             margin: 0 auto;
@@ -24,39 +26,41 @@
                 padding: 1rem;
                 display: flex;
                 align-items: center;
-               
+                
                 flex: 1; 
                 border-radius: $border-radius-small;
-               
+                
                 transition: all 0.2s ease-in-out;
 
-                h1 {
-                    color: $color-theme;
-                    font-size: 1rem;
-                    font-weight: $font-weight-medium;
-                    transition: all 0.3s ease-in-out;
-                    margin-left: 2rem;
-                }
-                p {
-                    margin-left: 2rem;
+                    h1 {
+                        color: $color-theme;
+                        font-size: 1rem;
+                        font-weight: $font-weight-medium;
+                        transition: all 0.3s ease-in-out;
+                        margin-left: 2rem;
+                    }
+                    p {
+                        margin-left: 2rem;
                     }
 
-                    &:hover {
-                        background-color: $color-theme;
-                        color: $color-white;
-
-                        img {
-                            filter: brightness(1000%);
-                        }
-                        h1 {
+                        &:hover {
+                            background-color: $color-theme;
                             color: $color-white;
+
+                            img {
+                                filter: brightness(1000%);
+                            }
+                            h1 {
+                                color: $color-white;
+                            }
                         }
-                    }
             }
-          }
+
+    }
 
   
-@media (min-width: 1000px) {
+@media (min-width: $breakpoint-lg) {
+
     .NEW__cards {
         display: grid;
         /* set to autofit for larger screens on grid-template-columns instead of 1fr */
@@ -66,10 +70,9 @@
     }
 }
 
-@media(min-width: 1200px) {
+@media(min-width: $breakpoint-xl) {
+
     .NEW__cards {
         font-size: 1rem;
     }
-   
-    
 }

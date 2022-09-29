@@ -305,7 +305,7 @@ footer {
         
             }
             .APPAREL__sections .card ul.card-menu {
-               height: fit-content;
+              /*  height: fit-content; */
             }
            
                 .APPAREL__sections .card .card-menu li  {
@@ -1685,7 +1685,7 @@ padding-top: 0.8rem;
             margin: 0;
               
           }
-          .main-menu nav .container {
+          .main-menu nav > .container {
             background-color: var(--color-theme-white);
           }
         .main-menu nav .browse-categories  {

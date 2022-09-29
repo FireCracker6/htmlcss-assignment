@@ -1,13 +1,21 @@
 .F__Copy  {
+    @include set-dynamic-colors($color-dark, 95);
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     height: 80px;
-    background-color: #000;
-    color: #fff;
+    background-color: $color-dark;
+    color:set-dynamic-colors;
     font-size: 1.1rem;
     text-align: center; 
     margin-right: 2rem;
     white-space: nowrap;
     padding-top: 0.8rem;
+    }
+
+
+    @media (min-width: $breakpoint-lg) {
+        .F__Copy {
+            justify-content: space-between;
+        }
     }

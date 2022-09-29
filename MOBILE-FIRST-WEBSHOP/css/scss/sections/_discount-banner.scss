@@ -54,7 +54,7 @@
        
     }
            
-@media (min-width: 1000px) {
+@media (min-width: $breakpoint-lg) {
     .DISC__container {
     
         flex-direction: row; 

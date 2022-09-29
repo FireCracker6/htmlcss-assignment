@@ -316,25 +316,33 @@
                  
                 
 /* Media min-width was tested with iphone and ipad (landscape and regular)  */
-@media (min-width: 420px) {
-   
-    .APPAREL__sections .card .card-body h1 {
+@media (min-width: $breakpoint-sm) {
+ 
+
+    .APPAREL__sections .card .card-body.card-body.TOPSELLER-body {
        
         margin-top: 0.8rem;
-        margin-bottom: 3rem;
+        margin-bottom: 0rem;
+        padding-bottom: 0rem;
     
     }
    
 }   
-@media (min-width:768px) {
+@media (min-width: $breakpoint-md) {
 
-    .MOBILE_ARRIVALS {
-        display: none;
-        }
-        .NO-MOBILE_ARRIVALS {
-        display: block;
-        }
-        
+    
+    .APPAREL__sections .card .card-body.card-body.TOPSELLER-body h1 {
+       
+        margin-top: 0.8rem;
+        margin-bottom: -0.5rem;
+        padding-top: 0rem;
+        padding-bottom: 2rem;
+    
+    }
+   
+    .APPAREL__sections.MOBILE .card .card-body.TOPSELLER-body  {
+        padding-bottom:3rem;
+    }
     .APPAREL__sections.NOMOBILE {
         display: none;
     }
@@ -342,16 +350,28 @@
         display: block;
     }
 
+    .MOBILE_ARRIVALS {
+        display: block;
+        }
+        .NO-MOBILE_ARRIVALS {
+        display: none;
+        }
+
      }
 
-     @media (min-width:1000px) {
+     @media (min-width:$breakpoint-lg) {
+
         
         .APPAREL__sections {
 
-            .card .card-body h1 {
+            
+          
+            .card .card-body h1{
     
-                margin-top: 0rem;
-                margin-bottom: 3rem;
+                margin-top: 0.6rem;
+                margin-bottom: 1rem;
+                padding-top: -3rem;
+                padding-bottom: 1rem;
                 
             }
             .card .card-body button {
@@ -361,15 +381,26 @@
                     display: block;
                 }
                 .NOMOBILE .container {
-                    width: 80%;
+                    width: 100%;
                 }
                 .MOBILE {
                     display: none;
                 }
+
                 
               
 
         }
+    
+        .MOBILE_ARRIVALS {
+            display: none;
+            }
+            .NO-MOBILE_ARRIVALS {
+            display: block;
+       
+            }
+
+       
        
                 
             
@@ -378,10 +409,20 @@
              
      }
 
-     @media(min-width: 1200px) {
+     @media(min-width: $breakpoint-xl) {
        
-        .APPAREL__sections .card .card-body button {
+        .APPAREL__sections {
+            .card .card-body  {
+    
+                margin-top: 0rem;
+                margin-bottom: 0.5rem;
+                
+            }
+        
+        
+        .card .card-body button {
             display: block;
         }
+    }
         
     }

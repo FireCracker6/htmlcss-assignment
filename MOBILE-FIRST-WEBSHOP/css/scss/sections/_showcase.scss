@@ -30,9 +30,10 @@
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: $breakpoint-lg) {
 
     .showcase {
+
         .container {
             display: flex;
             justify-content: space-between;
@@ -46,6 +47,7 @@
             }
     
         }
+
         img {
             display: block;
             width: 50%;
@@ -53,13 +55,4 @@
 
     }
 
-    
-    
-
 }
-      
-      
-           
-          
-
- 
